@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Showcase</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1000px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #1F3C88;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin: 40px 0;
+    }
+
+    .portfolio-grid img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-grid img:hover {
+      transform: scale(1.02);
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #1F3C88;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #162c6e;
+    }
+  </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1PKH55BTQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F1PKH55BTQ');
+</script>
+<body>
+  <div class="container">
+    <h1>Top 4 of the week : Portfolio Showcase</h1>
+
+    <div class="portfolio-grid">
+      <img src="/images/portfolio1.png" alt="Portfolio 1">
+      <img src="/images/portfolio2.png" alt="Portfolio 2">
+      <img src="/images/portfolio3.png" alt="Portfolio 3">
+      <img src="/images/portfolio4.gif" alt="Portfolio 4">
+    </div>
+
+    <a href="index.html" class="back-button">Back to Home</a>
+  </div>
+</body>
+</html>

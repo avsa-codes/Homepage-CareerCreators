@@ -1,0 +1,8234 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.escape-room {
+  background-color: #040707;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.escape-room .div {
+  background-color: #F8F9FA;
+  overflow: hidden;
+  width: 1440px;
+  height: 6840px;
+  position: relative;
+}
+
+.escape-room .overlap {
+  position: absolute;
+  width: 1443px;
+  height: 783px;
+  top: -296px;
+  left: 324px;
+}
+
+.escape-room .ellipse {
+  position: absolute;
+  width: 780px;
+  height: 780px;
+  top: 0;
+  left: 663px;
+  background-color: #F8F9FA;
+  border-radius: 390px;
+  filter: blur(500px);
+}
+
+.escape-room .step-in-break-out {
+  position: relative;
+  width: 1207px;
+  height: 80px;
+  top: 479px;
+  left: -298px;
+ /* font-family: math;
+  font-weight: 600;*/
+  color: var(--tokens-text);
+  font-size: 59px;
+  letter-spacing: -1px;
+  line-height: normal;
+  animation: float 3s ease-in-out infinite;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+
+.escape-room .text-wrapper {
+  color:#2E2E2E;
+}
+
+.escape-room .span {
+  color:#1F3C88;
+}
+
+.escape-room .an-experience-so {
+  position: absolute;
+  width: 814px;
+  height: 20px;
+  top: 670px;
+  left: -23px;
+  font-family: math;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+  
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+.escape-room .p {
+  position: absolute;
+  height: 36px;
+  top: 590px;
+  left: 39px;
+  color: #2E2E2E;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.escape-room .main-enable {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 36px;
+  position: absolute;
+  top: 442px;
+  left: 468px;
+  border-radius: 100px;
+  border: 0.6px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  background: linear-gradient(225deg, rgba(255, 174, 0, 1) 0%, rgba(248, 126, 0, 1) 100%);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+.main-enable:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(248, 126, 0, 1);
+}
+
+.escape-room .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.6px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .main-disabled {
+  display: flex;
+  width: 159px;
+  height: 44px;
+  position: absolute;
+  top: 430px;
+  left: 730px;
+  background-color: #27AE60;
+  border: 1px solid;
+  backdrop-filter: blur(10px) brightness(100%);
+  -webkit-backdrop-filter: blur(10px) brightness(100%);
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 36px;
+  border-radius: 100px;
+  border-color: var(--tokens-card-and-button-strokes);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+.main-disabled:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(34, 247, 2, 0.5);
+}
+
+
+.escape-room .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  margin-left: -11.5px;
+  margin-right: -11.5px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .group {
+  position: absolute;
+  width: 187px;
+  height: 16px;
+  top: 648px;
+  left: 536px;
+}
+
+.escape-room .text-wrapper-4 {
+  position: absolute;
+  height: 15px;
+  top: -154px;
+  left: -28px;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #858787;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 14.6px;
+  white-space: nowrap;
+}
+
+.escape-room .encrypted {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -157px;
+  left: -59px;
+  display: none;
+}
+
+.escape-room .designer {
+  position: absolute;
+  width: 1120px;
+  height: 550px;
+  top: 650px;
+  left: 172px;
+  border-radius: 20px;
+  border: 2px solid;
+}
+
+.escape-room .flexcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  position: absolute;
+  width: 850px;
+  height: 180px;
+  top: 1413px;
+  left: 259px;
+}
+
+.escape-room .text {
+ position: relative;
+        align-self: stretch;
+        font-family: math;
+        font-weight: 500;
+        color: transparent;
+        font-size: 44px;
+        letter-spacing: 1.08px;
+        line-height: normal;
+        left: -82px;
+        top: -234px;
+        width: 1110px;
+        animation: float 3s ease-in-out infinite;
+}
+
+.escape-room .text-wrapper-5 {
+          color: #1F3C88;
+        letter-spacing: 0.39px;
+        position: relative;
+        top: -100px;
+       
+}
+
+.escape-room .text-wrapper-6 {
+  color: #ffae00;
+  letter-spacing: 0.39px;
+  
+}
+
+.escape-room .in-our-evolved {
+          position: absolute;
+        height: 52px;
+        top: 1657px;
+        left: 396px;
+        font-family: math;
+        font-weight: 500;
+        color: transparent;
+        font-size: 56px;
+        letter-spacing: 1.08px;
+        line-height: 52px;
+        white-space: nowrap;
+        animation: float 3s ease-in-out infinite;
+        font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.escape-room .group-2 {
+  position: absolute;
+  width: 1120px;
+  height: 181px;
+  top: 1815px;
+  left: 160px;
+}
+
+.escape-room .group-3 {
+  position: absolute;
+  width: 174px;
+  height: 170px;
+  top: 11px;
+  left: 308px;
+}
+
+.escape-room .puzzle-svgrepo-com {
+  position: absolute;
+  width: 106px;
+  height: 106px;
+  top: 0;
+  left: 33px;
+  background-image: url(./img/group-3.png);
+  background-size: 100% 100%;
+}
+
+.escape-room .text-wrapper-7 {
+  position: absolute;
+  height: 24px;
+  top: 146px;
+  left: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #ffae00;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.escape-room .group-4 {
+  position: absolute;
+  width: 155px;
+  height: 164px;
+  top: 17px;
+  left: 0;
+}
+
+.escape-room .text-wrapper-8 {
+position: absolute;
+        height: 24px;
+        top: 140px;
+        left: -104px;
+        font-family: math;
+        font-weight: 500;
+        color: #1A1A1A;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: 24px;
+        white-space: nowrap;
+}
+
+.escape-room .camera-svgrepo {
+  position: absolute;
+  width: 116px;
+  height: 116px;
+  top: 0;
+  left: 19px;
+}
+
+.escape-room .img {
+  position: absolute;
+        width: 130px;
+        height: 130px;
+        top: 0;
+        left: -123px;
+        border-radius: 12px;
+}
+
+.escape-room .group-5 {
+  position: absolute;
+  width: 144px;
+  height: 181px;
+  top: 0;
+  left: 978px;
+}
+
+.escape-room .text-wrapper-9 {
+         position: absolute;
+        height: 24px;
+        top: 157px;
+        left: 33px;
+        font-family: math;
+        font-weight: 500;
+        color: #1A1A1A;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: 24px;
+        white-space: nowrap;
+}
+
+.escape-room .detective-face {
+  position: absolute;
+  width: 142px;
+  height: 142px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .group-6 {
+          position: absolute;
+        width: 130px;
+        height: 130px;
+        top: 24px;
+        left: 90px;
+        border-radius: 12px;
+}
+
+.escape-room .group-7 {
+  position: absolute;
+  width: 190px;
+  height: 159px;
+  top: 22px;
+  left: 635px;
+}
+
+.escape-room .text-wrapper-10 {
+          position: absolute;
+        height: 24px;
+        top: 135px;
+        left: -125px;
+        font-family: math;
+        font-weight: 500;
+        color: #1A1A1A;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 24px;
+        white-space: nowrap;
+}
+
+.escape-room .image-circle-story {
+  position: absolute;
+        width: 130px;
+        height: 130px;
+        top: 0;
+        left: -124px;
+        border-radius: 12px;
+}
+
+.escape-room .group-8 {
+  position: absolute;
+  width: 1120px;
+  height: 60px;
+  top: 2196px;
+  left: 160px;
+}
+
+.escape-room .frame {
+  position: absolute;
+  width: 352px;
+  height: 60px;
+  top: 0;
+  left: -109px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border:1px solid black;
+}
+
+.frame:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(7, 255, 11, 0.5);
+}
+
+.escape-room .img-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 134px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: none;
+}
+
+.escape-room .the-pioneer {
+  position: relative;
+  width: 91.12px;
+  height: 18px;
+  margin-left: -2.56px;
+  margin-right: -2.56px;
+}
+
+.escape-room .text-wrapper-11 {
+position: absolute;
+        height: 16px;
+        top: 13px;
+        left: 98px;
+        font-family: math;
+        font-weight: 400;
+        color: #28A745;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+}
+
+.escape-room .text-wrapper-12 {
+         position: absolute;
+        height: 12px;
+        top: 40px;
+        left: 140px;
+        font-family: math;
+        font-weight: 400;
+        color: #1A1A1A;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+}
+
+.escape-room .frame-2 {
+  position: absolute;
+  width: 352px;
+  height: 60px;
+  top: 0;
+  left: 384px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border:1px solid black;
+}
+
+.frame-2:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(7, 255, 11, 0.5);
+}
+
+.escape-room .the-indian-express {
+  position: relative;
+  width: 114px;
+  height: 11px;
+  margin-left: -14px;
+  margin-right: -14px;
+  object-fit: cover;
+}
+
+.escape-room .frame-3 {
+  position: absolute;
+  width: 352px;
+  height: 60px;
+  top: 0;
+  left: 865px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border:1px solid black;
+}
+
+.frame-3:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(7, 255, 11, 0.5);
+}
+
+.escape-room .zee-business-channel {
+  position: relative;
+  width: 79px;
+  height: 30px;
+}
+
+.escape-room .group-9 {
+  position: absolute;
+  width: 1119px;
+  height: 68px;
+  top: 4066px;
+  left: 160px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.escape-room .group-10 {
+ position: absolute;
+        width: 312px;
+        height: 67px;
+        top: 0;
+        left: 832px;
+}
+
+.escape-room .group-11 {
+  position: absolute;
+  width: 140px;
+  height: 64px;
+  top: 2px;
+  left: 174px;
+}
+
+.escape-room .text-wrapper-13 {
+  position: absolute;
+  height: 36px;
+  top: 0;
+  left: 0;
+  font-family: math;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-14 {
+  position: absolute;
+  height: 20px;
+  top: 44px;
+  left: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #DC3545;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .text-wrapper-15 {
+  position: absolute;
+  width: 150px;
+  top: 0;
+  left: -8px;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 76px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-12 {
+  position: absolute;
+        width: 312px;
+        height: 68px;
+        top: 0;
+        left: 431px;
+
+}
+
+.escape-room .group-13 {
+  position: absolute;
+  width: 246px;
+  height: 64px;
+  top: 2px;
+  left: 140px;
+}
+
+.escape-room .text-wrapper-16 {
+  position: absolute;
+  width: 44px;
+  top: 0;
+  left: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 76px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-wrapper {
+  position: absolute;
+  width: 363px;
+  height: 67px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .group-14 {
+ position: relative;
+        width: 365px;
+        height: 67px;
+        left: -108px;
+}
+
+.escape-room .group-15 {
+  position: absolute;
+  width: 198px;
+  height: 64px;
+  top: 2px;
+  left: 169px;
+}
+
+.escape-room .text-wrapper-17 {
+  position: absolute;
+  width: 145px;
+  top: 0;
+  left: 0;
+  font-family: math;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 76px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-16 {
+  position: absolute;
+  width: 1122px;
+  height: 428px;
+  top: 4334px;
+  left: 160px;
+}
+
+.escape-room .visit-a-location {
+  position: absolute;
+  height: 36px;
+  top: 0;
+  left: 365px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-sub-headline);
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .frame-4 {
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+  position: absolute;
+  top: 76px;
+  left: 0;
+  display: none;
+}
+
+.escape-room .frame-wrapper {
+  position: relative;
+  width: 352px;
+  height: 352px;
+  border-radius: 24px;
+  background-image: url(./img/frame-804.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .div-wrapper {
+  display: flex;
+  width: 352px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 36px;
+  position: relative;
+  top: 304px;
+  border-radius: 24px;
+  border: 0.5px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  background: linear-gradient(225deg, rgba(255, 174, 0, 1) 0%, rgba(248, 126, 0, 1) 100%);
+}
+
+.escape-room .text-wrapper-18 {
+  position: relative;
+  width: fit-content;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .frame-5 {
+  position: relative;
+  width: 352px;
+  height: 352px;
+  border-radius: 24px;
+  background-image: url(./img/frame-803.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .frame-6 {
+  position: relative;
+  width: 352px;
+  height: 352px;
+  border-radius: 24px;
+  background-image: url(./img/frame-802.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .group-17 {
+  position: absolute;
+  width: 1122px;
+  height: 432px;
+  top: 5897px;
+  left: 160px;
+}
+
+.escape-room .text-wrapper-19 {
+  position: absolute;
+  top: 0;
+  left: 511px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-sub-headline);
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 39.6px;
+  white-space: nowrap;
+}
+
+.escape-room .frame-7 {
+  display: flex;
+  width: 1120px;
+  align-items: center;
+  gap: 32px;
+  position: absolute;
+  top: -500px;
+  left: 0;
+  overflow: hidden;
+  
+}
+
+
+.escape-room .frame-8 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./images/internshipblog.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid black;
+}
+
+.frame-8:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+.escape-room .frame-9 {
+display: flex;
+        width: 292px;
+        height: 40px;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 16px 24px;
+        position: relative;
+        background-color: var(--tokens-overlay-card);
+        border-radius: 20px;
+        border: 0.5px solid;
+        border-color: var(--tokens-card-and-button-strokes);
+        backdrop-filter: blur(16px) brightness(100%);
+        -webkit-backdrop-filter: blur(16px) brightness(100%);
+}
+
+.escape-room .text-wrapper-20 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 34px;
+  letter-spacing: 0.1px;
+  line-height: 22px;
+  white-space: nowrap;
+  top: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-10 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./images/careeradvice.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid black;
+}
+
+.frame-10:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+.escape-room .frame-11 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./images/myths.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid black;
+}
+
+.frame-11:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+.escape-room .text-wrapper-21 {
+  position: relative;
+  width: 290px;
+  margin-top: -0.5px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 39px;
+  letter-spacing: 0.1px;
+  line-height: 22px;
+  top: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-12 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./img/frame-790.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .overlap-group-wrapper {
+  position: absolute;
+  width: 1126px;
+  height: 468px;
+  top: 6529px;
+  left: 160px;
+}
+
+.escape-room .overlap-group {
+  position: relative;
+  width: 1120px;
+  height: 468px;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(2px) brightness(100%);
+  -webkit-backdrop-filter: blur(2px) brightness(100%);
+  top: -500px;
+}
+
+.escape-room .overlap-2 {
+  position: absolute;
+  width: 1120px;
+  height: 284px;
+  top: 184px;
+  left: 0;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  border: 1px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  backdrop-filter: blur(2px) brightness(100%);
+  -webkit-backdrop-filter: blur(2px) brightness(100%);
+}
+
+.escape-room .group-18 {
+  position: absolute;
+  width: 418px;
+  height: 30px;
+  top: 69px;
+  left: 63px;
+}
+
+.escape-room .text-wrapper-22 {
+  position: absolute;
+  width: 92px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.escape-room .vector {
+  top: 30px;
+  left: 0;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .group-19 {
+  position: absolute;
+  width: 418px;
+  height: 30px;
+  top: 119px;
+  left: 63px;
+}
+
+.escape-room .text-wrapper-23 {
+  position: absolute;
+  width: 168px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.escape-room .group-20 {
+  position: absolute;
+  width: 416px;
+  height: 44px;
+  top: 169px;
+  left: 63px;
+}
+
+.escape-room .vector-2 {
+  top: 44px;
+  left: 0;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .group-21 {
+  position: absolute;
+  width: 418px;
+  height: 32px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .text-wrapper-24 {
+  position: absolute;
+  height: 20px;
+  top: 12px;
+  left: 0;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .stat-minus-wrapper {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: 384px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  border: 0.5px solid;
+  border-color: var(--tokens-text);
+}
+
+.escape-room .stat-minus {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: 4px;
+}
+
+.escape-room .text-wrapper-25 {
+  position: absolute;
+  width: 117px;
+  height: 18px;
+  top: 69px;
+  left: 639px;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.escape-room .vector-3 {
+  top: 98px;
+  left: 639px;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .vector-4 {
+  top: 138px;
+  left: 639px;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .vector-5 {
+  top: 178px;
+  left: 639px;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .main-enable-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  position: absolute;
+  top: 203px;
+  left: 639px;
+}
+
+.escape-room .main-enable-2 {
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+  border: 0.6px solid;
+  background: #27AE60;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 12px;
+  border-radius: 100px;
+  border-color: var(--tokens-card-and-button-strokes);
+  left: 320px;
+  top: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main-enable-2:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(1, 255, 56, 0.5);
+}
+
+.escape-room .text-wrapper-26 {
+  position: absolute;
+  top: 46px;
+  left: 64px;
+  font-family: math;
+  font-weight: 700;
+  color: var(--breakout-breakout-breakout-primary-500);
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.escape-room .group-22 {
+  position: absolute;
+  width: 444px;
+  height: 44px;
+  top: 104px;
+  left: 640px;
+}
+
+.escape-room .component {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 398px;
+  background-image: url(./img/component-13.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .text-wrapper-27 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.escape-room .group-23 {
+  position: absolute;
+  width: 112px;
+  height: 44px;
+  top: 104px;
+  left: 368px;
+}
+
+.escape-room .component-2 {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 68px;
+  background-image: url(./img/component-12.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .component-3 {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/component-14.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .text-wrapper-28 {
+  position: absolute;
+  top: 114px;
+  left: 64px;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.escape-room .group-24 {
+  position: absolute;
+  width: 1440px;
+  height: 140px;
+  top: 7197px;
+  left: 0;
+}
+
+.escape-room .group-25 {
+  height: 140px;
+  background-color: var(--tokens-header);
+}
+
+.escape-room .frame-13 {
+  display: flex;
+  width: 1440px;
+  align-items: center;
+  justify-content: center;
+  gap: 162px;
+  padding: 40px 160px;
+  position: relative;
+  background-color:#2C3E50;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  top: -498px;
+}
+
+.escape-room .image {
+          position: relative;
+        width: 271px;
+        height: 100px;
+        top: -15px;
+        left: -262px;
+}
+
+.escape-room .group-26 {
+  position: relative;
+  width: 141.32px;
+  height: 26.08px;
+}
+
+.escape-room .vector-6 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -46px;
+  left: -340px;
+}
+
+.escape-room .group-27 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -46px;
+  left: -100px;
+}
+
+.escape-room .group-28 {
+  position: absolute;
+  width: 80px;
+        height: 80px;
+        top: -46px;
+  left: 125px;
+}
+
+.escape-room .group-29 {
+  position: relative;
+  width: 382px;
+  height: 20px;
+  margin-right: -0.16px;
+}
+
+.escape-room .text-wrapper-29 {
+  position: absolute;
+  height: 20px;
+  top: 0;
+  left: 30px;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .group-30 {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .group-31 {
+  position: relative;
+  width: 17px;
+  height: 15px;
+  top: 2px;
+  left: 2px;
+}
+
+.escape-room .overlap-group-2 {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  border: 1.35px solid;
+  border-color: var(--tokens-text);
+}
+
+.escape-room .text-wrapper-30 {
+  position: absolute;
+  width: 8px;
+  height: 9px;
+  top: 2px;
+  left: 2px;
+  font-family: "Arial-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 9.8px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-32 {
+  position: absolute;
+  width: 1122px;
+  height: 735px;
+  top: 4962px;
+  left: 160px;
+  
+}
+
+
+
+.escape-room .peek-into-an {
+ position: absolute;
+        top: -670px;
+        left: 130px;
+        font-family: math;
+        font-weight: 500;
+        color: var(--tokens-sub-headline);
+        font-size: 56px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 39.6px;
+        white-space: nowrap;
+        animation: float 3s ease-in-out infinite;
+        font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.escape-room .group-33 {
+ position: absolute;
+        width: 1128px;
+        height: 655px;
+        top: -408px;
+        left: -19px;
+}
+
+.escape-room .overlap-group-3 {
+  position: absolute;
+  width: 544px;
+  height: 300px;
+  top: 355px;
+  left: 0;
+  background-image: url(./images/showcaseport.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.overlap-group-3:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+.escape-room .rectangle {
+ position: absolute;
+        width: 544px;
+        height: 80px;
+        top: 220px;
+        left: -1px;
+        background-color: var(--tokens-overlay-card);
+        border-radius: 18px;
+        border: 1px solid;
+        border-color: var(--tokens-card-and-button-strokes);
+        backdrop-filter: blur(16px) brightness(100%);
+        -webkit-backdrop-filter: blur(16px) brightness(100%);
+}
+
+.escape-room .text-wrapper-31 {
+  position: absolute;
+  height: 33px;
+  top: 244px;
+  left: 53px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .overlap-3 {
+  position: absolute;
+  width: 544px;
+  height: 300px;
+  top: 0;
+  left: 0;
+  background-image: url(./images/mentorjourney.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.overlap-3:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+
+
+.escape-room .text-wrapper-32 {
+  position: absolute;
+  height: 33px;
+  top: 244px;
+  left: 35px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .overlap-4 {
+  position: absolute;
+  width: 544px;
+  height: 300px;
+  top: 0;
+  left: 678px;
+  background-image: url(./images/testimonials.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.overlap-4:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+.escape-room .text-wrapper-33 {
+  position: absolute;
+  height: 33px;
+  top: 243px;
+  left: 33px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .overlap-5 {
+  position: absolute;
+  width: 544px;
+  height: 300px;
+  top: 355px;
+  left: 678px;
+  background-image: url(./images/outcomereview.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.overlap-5:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+.escape-room .text-wrapper-34 {
+  position: absolute;
+  height: 33px;
+  top: 244px;
+  left: 33px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .group-34 {
+  position: absolute;
+  width: 1120px;
+  height: 1330px;
+  top: 2536px;
+  left: 51px;
+}
+
+.escape-room .frame-14 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 63px;
+  position: absolute;
+  top: 470px;
+  left: 0;
+}
+
+.escape-room .frame-15 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 43px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+ 
+}
+
+.frame-15:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+
+
+.escape-room .img-2 {
+  position: relative;
+        width: 360px;
+        height: 309px;
+        border-radius: 16px;
+        border: 2px solid;
+        left: -4px;
+
+}
+
+.escape-room .text-wrapper-35 {
+         position: relative;
+        width: fit-content;
+        font-family: math;
+        font-weight: 500;
+        color: #1F3C88;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 26.4px;
+        white-space: nowrap;
+        left: 32px;
+        font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-16 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+  display: none;
+}
+
+.escape-room .frame-17 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.escape-room .text-wrapper-36 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text-headline);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 17.6px;
+  white-space: nowrap;
+}
+
+.escape-room .text-wrapper-37 {
+  margin-top: -1px;
+  text-align: center;
+  position: relative;
+  width: fit-content;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 17.6px;
+  white-space: nowrap;
+}
+
+.escape-room .img-3 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.escape-room .text-wrapper-38 {
+  position: relative;
+  width: fit-content;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 17.6px;
+  white-space: nowrap;
+}
+
+.escape-room .frame-18 {
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.escape-room .confirmation-number-wrapper {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border: 0.5px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  display: none;
+}
+
+.escape-room .confirmation-number {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 6px;
+  left: 6px;
+}
+
+.escape-room .frame-19 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 50px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .frame-20 {
+  align-items: flex-end;
+  gap: 20px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+  display: none;
+}
+
+.escape-room .frame-21 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 63px;
+  position: absolute;
+  top: 940px;
+  left: 0;
+}
+
+.escape-room .frame-22 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: flex-end;
+  gap: 12px 50px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .frame-23 {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.escape-room .frame-24 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: flex-end;
+  gap: 12px 21px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.frame-24:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+.escape-room .text-wrapper-39 {
+          position: relative;
+        width: fit-content;
+        font-family: math;
+        font-weight: 500;
+        color: #1F3C88;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 26.4px;
+        white-space: nowrap;
+        left: 32px;
+        font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-25 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 22px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.frame-25:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+.escape-room .frame-26 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 63px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .frame-27 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 45px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.frame-27:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+
+
+.escape-room .frame-28 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 49px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.frame-28:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+.escape-room .escape-rooms {
+  position: absolute;
+  top: 2455px;
+  left: 528px;
+  font-family: "Sharp Grotesk-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 39.6px;
+  white-space: nowrap;
+  animation: float 3s ease-in-out infinite;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+.escape-room .rectangle-2 {
+  position: fixed;
+  width: 1440px;
+  height: 138px;
+  top: 0;
+  left: 0;
+  background-color: #2C3E50;
+}
+
+.escape-room .image-2 {
+  position: fixed;
+  width: 250px;
+  height: 100px;
+  top: 21px;
+  left: 14px;
+}
+
+.escape-room .navbar {
+  position: fixed;
+  width: 461px;
+  height: 20px;
+  top: 38px;
+  left: 350px;
+}
+
+.escape-room .text-wrapper-40 {
+  left: 45px;
+  position: absolute;
+  height: 20px;
+  top: 24px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-41 {
+  position: absolute;
+  height: 20px;
+  top: 24px;
+  left: 307px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-42 {
+  left: 633px;
+  position: absolute;
+  height: 20px;
+  top: 24px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-43 {
+  left: 368px;
+  position: absolute;
+  height: 20px;
+  top: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  display: none;
+}
+
+.escape-room .component-4 {
+  position: fixed;
+  width: 180px;
+  height: 44px;
+  top: 26px;
+  left: 1100px;
+}
+
+.escape-room .menu-wrapper {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  left: 136px;
+  background-color: var(--tokens-secondary-button);
+  border-radius: 22px;
+  border: 0.5px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  display: none;
+}
+
+.escape-room .menu {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  left: 10px;
+}
+
+.escape-room .component-5 {
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  top: 26px;
+  left: 919px;
+  background-image: url(./img/component-24.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .main-enable-3 {
+  display: inline-flex;
+  align-items: flex-start;
+  position: fixed;
+  top: 26px;
+  left: 987px;
+}
+
+.escape-room .component-6 {
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  top: 26px;
+  left: 1166px;
+  background-image: url(./img/component-14-2.svg);
+  background-size: 100% 100%;
+} 
+
+/* CSS CODE FOR CONTACT FORM */
+.escape-room-sample{
+  background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        top: 6489px;
+        height: 2px;
+}
+
+.form-group{
+  font-size: 20px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bolder;
+    font-family: math;
+    color: black;
+}
+
+.contact-info{
+      margin-top: 30px;
+    font-size: 20px;
+    color: #1A1A1A;
+    position: relative;
+    left: 786px;
+    top: -84px;
+    font-family: math;
+    font-weight: bolder;
+}
+
+.contact-button{
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-button:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(68, 255, 0, 0.5);
+}
+
+
+
+
+#name, #phone, #cars, #message{
+      width: 91%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+    outline: none;
+    font-family: math;
+}
+
+#looking-for{
+  display: none;
+}
+
+.overlap-group-sample{
+  position: relative;
+    width: 1120px;
+    height: 468px;
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin: 50px auto;
+    padding: 40px;
+    border: 4px solid black;
+    top:-530px;
+}
+
+/* CSS CODE FOR CONTACT FORM */
+
+
+/*FROM HERE on CSS FOR EXTRA SMALL DEVICES*/
+
+@media (min-width: 320px) {
+  .escape-room {
+  background-color: #040707;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.escape-room .div {
+  background-color: #F8F9FA;
+  overflow: hidden;
+  width: 1440px;
+  height: 6840px;
+  position: relative;
+}
+
+.escape-room .overlap {
+  position: absolute;
+  width: 1443px;
+  height: 783px;
+  top: -296px;
+  left: 324px;
+}
+
+.escape-room .ellipse {
+  position: absolute;
+  width: 780px;
+  height: 780px;
+  top: 0;
+  left: 663px;
+  background-color: #F8F9FA;
+  border-radius: 390px;
+  filter: blur(500px);
+}
+
+.escape-room .step-in-break-out {
+  position: relative;
+        width: 1207px;
+        height: 80px;
+        top: 479px;
+        left: -298px;
+        
+        color: var(--tokens-text);
+        font-size: 42px;
+        letter-spacing: -1px;
+        line-height: normal;
+        font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper {
+  color: #2E2E2E;
+}
+
+.escape-room .span {
+  color: #1F3C88;
+}
+
+.escape-room .an-experience-so {
+ position: absolute;
+        width: 814px;
+        height: 20px;
+        top: 631px;
+        left: -243px;
+        font-family: math;
+        font-weight: 400;
+        color: var(--tokens-text);
+        font-size: 21px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+}
+
+.escape-room .p {
+  position: absolute;
+        height: 36px;
+        top: 552px;
+        left: -174px;
+        font-family: math;
+        font-weight: 500;
+        color: #2E2E2E;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+        font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.escape-room .main-enable {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 36px;
+  position: absolute;
+  top: 442px;
+  left: 233px;
+  border-radius: 100px;
+  border: 0.6px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  background: linear-gradient(225deg, rgba(255, 174, 0, 1) 0%, rgba(248, 126, 0, 1) 100%);
+}
+
+.escape-room .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.6px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .main-disabled {
+  display: flex;
+  width: 159px;
+  height: 44px;
+  position: absolute;
+  top: 430px;
+  left: 556px;
+  background-color: #27AE60;
+  border: 1px solid;
+  backdrop-filter: blur(10px) brightness(100%);
+  -webkit-backdrop-filter: blur(10px) brightness(100%);
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 36px;
+  border-radius: 100px;
+  border-color: var(--tokens-card-and-button-strokes);
+}
+
+.escape-room .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  margin-left: -11.5px;
+  margin-right: -11.5px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .group {
+  position: absolute;
+  width: 187px;
+  height: 16px;
+  top: 648px;
+  left: 536px;
+}
+
+.escape-room .text-wrapper-4 {
+  position: absolute;
+  height: 15px;
+  top: -154px;
+  left: -250px;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #858787;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 14.6px;
+  white-space: nowrap;
+}
+
+.escape-room .encrypted {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -157px;
+  left: -278px;
+  display: none;
+}
+
+.escape-room .designer {
+  position: absolute;
+  width: 897px;
+  height: 550px;
+  top: 610px;
+  left: 38px;
+  border-radius: 8px;
+  border: 2px solid;
+}
+
+.escape-room .flexcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  position: absolute;
+  width: 850px;
+  height: 180px;
+  top: 1413px;
+  left: 259px;
+}
+
+.escape-room .text {position: relative;
+        align-self: stretch;
+        font-family: math;
+        font-weight: 500;
+        color: transparent;
+        font-size: 41px;
+        letter-spacing: 1.08px;
+        line-height: normal;
+        left: -222px;
+        top: -271px;
+        width: 921px;
+}
+
+.escape-room .text-wrapper-5 {
+          color: #1F3C88;
+        letter-spacing: 0.39px;
+        position: relative;
+        top: -72px;
+}
+
+.escape-room .text-wrapper-6 {
+  color: #ffae00;
+  letter-spacing: 0.39px;
+}
+
+.escape-room .in-our-evolved {
+          position: absolute;
+        height: 52px;
+        top: 1657px;
+        left: 170px;
+        font-family: math;
+        font-weight: 500;
+        color: transparent;
+        font-size: 56px;
+        letter-spacing: 1.08px;
+        line-height: 52px;
+        white-space: nowrap;
+        font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.escape-room .group-2 {
+  position: absolute;
+  width: 1120px;
+  height: 181px;
+  top: 1815px;
+  left: 160px;
+}
+
+.escape-room .group-3 {
+  position: absolute;
+  width: 174px;
+  height: 170px;
+  top: 11px;
+  left: 308px;
+}
+
+.escape-room .puzzle-svgrepo-com {
+  position: absolute;
+  width: 106px;
+  height: 106px;
+  top: 0;
+  left: 33px;
+  background-image: url(./img/group-3.png);
+  background-size: 100% 100%;
+}
+
+.escape-room .text-wrapper-7 {
+  position: absolute;
+  height: 24px;
+  top: 146px;
+  left: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #ffae00;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.escape-room .group-4 {
+  position: absolute;
+  width: 155px;
+  height: 164px;
+  top: 17px;
+  left: 0;
+}
+
+.escape-room .text-wrapper-8 {
+  position: absolute;
+        height: 24px;
+        top: 140px;
+        left: -104px;
+        font-family: math;
+        font-weight: 500;
+        color: #1A1A1A;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: 24px;
+        white-space: nowrap;
+}
+
+.escape-room .camera-svgrepo {
+  position: absolute;
+  width: 116px;
+  height: 116px;
+  top: 0;
+  left: 19px;
+}
+
+.escape-room .img {
+  position: absolute;
+        width: 130px;
+        height: 130px;
+        top: 0;
+        left: -123px;
+        border-radius: 12px;
+}
+
+.escape-room .group-5 {
+  position: absolute;
+  width: 144px;
+  height: 181px;
+  top: 0;
+  left: 978px;
+}
+
+.escape-room .text-wrapper-9 {
+         position: absolute;
+        height: 24px;
+        top: 157px;
+        left: -392px;
+        font-family: math;
+        font-weight: 500;
+        color: #1A1A1A;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: 24px;
+        white-space: nowrap;
+}
+
+.escape-room .detective-face {
+  position: absolute;
+  width: 142px;
+  height: 142px;
+  top: 0;
+  left: -426px;
+}
+
+.escape-room .group-6 {
+          position: absolute;
+        width: 130px;
+        height: 130px;
+        top: 24px;
+        left: 90px;
+        border-radius: 12px;
+}
+
+.escape-room .group-7 {
+  position: absolute;
+  width: 190px;
+  height: 159px;
+  top: 22px;
+  left: 390px;
+}
+
+.escape-room .text-wrapper-10 {
+         position: absolute;
+        height: 24px;
+        top: 135px;
+        left: -125px;
+        font-family: math;
+        font-weight: 500;
+        color: #1A1A1A;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 24px;
+        white-space: nowrap;
+}
+
+.escape-room .image-circle-story {
+   position: absolute;
+        width: 130px;
+        height: 130px;
+        top: 0;
+        left: -124px;
+        border-radius: 12px;
+}
+
+.escape-room .group-8 {
+  position: absolute;
+  width: 1120px;
+  height: 60px;
+  top: 2196px;
+  left: 160px;
+}
+
+.escape-room .frame {
+  position: absolute;
+  width: 352px;
+  height: 60px;
+  top: 0;
+  left: -120px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .img-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 134px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: none;
+}
+
+.escape-room .the-pioneer {
+  position: relative;
+  width: 91.12px;
+  height: 18px;
+  margin-left: -2.56px;
+  margin-right: -2.56px;
+}
+
+.escape-room .text-wrapper-11 {
+ position: absolute;
+        height: 16px;
+        top: 13px;
+        left: 98px;
+        font-family: math;
+        font-weight: 400;
+        color: #28A745;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+}
+
+.escape-room .text-wrapper-12 {
+          position: absolute;
+        height: 12px;
+        top: 40px;
+        left: 140px;
+        font-family: math;
+        font-weight: 400;
+        color: #1A1A1A;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+}
+
+.escape-room .frame-2 {
+  position: absolute;
+  width: 352px;
+  height: 60px;
+  top: 0;
+  left: 426px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .the-indian-express {
+  position: relative;
+  width: 114px;
+  height: 11px;
+  margin-left: -14px;
+  margin-right: -14px;
+  object-fit: cover;
+}
+
+.escape-room .frame-3 {
+  position: absolute;
+  width: 352px;
+  height: 60px;
+  top: 0;
+  left: 940px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .zee-business-channel {
+  position: relative;
+  width: 79px;
+  height: 30px;
+}
+
+.escape-room .group-9 {
+  position: absolute;
+  width: 1119px;
+  height: 68px;
+  top: 4066px;
+  left: -398px;
+}
+
+.escape-room .group-10 {position: absolute;width: 312px;height: 67px;top: 0;left: 981px;}
+
+.escape-room .group-11 {
+  position: absolute;
+  width: 140px;
+  height: 64px;
+  top: 2px;
+  left: 174px;
+}
+
+.escape-room .text-wrapper-13 {
+  position: absolute;
+  height: 36px;
+  top: 0;
+  left: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-14 {
+  position: absolute;
+  height: 20px;
+  top: 44px;
+  left: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #DC3545;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .text-wrapper-15 {
+  position: absolute;
+  width: 150px;
+  top: 0;
+  left: -8px;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 76px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-12 {
+  position: absolute;
+        width: 312px;
+        height: 68px;
+        top: 0;
+        left: 431px;
+
+}
+
+.escape-room .group-13 {
+  position: absolute;
+  width: 246px;
+  height: 64px;
+  top: 2px;
+  left: 140px;
+}
+
+.escape-room .text-wrapper-16 {
+  position: absolute;
+  width: 44px;
+  top: 0;
+  left: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 76px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-wrapper {
+  position: absolute;
+  width: 363px;
+  height: 67px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .group-14 {
+  position: relative;
+        width: 365px;
+        height: 67px;
+        left: -108px;
+}
+
+.escape-room .group-15 {
+  position: absolute;
+  width: 198px;
+  height: 64px;
+  top: 2px;
+  left: 169px;
+}
+
+.escape-room .text-wrapper-17 {
+  position: absolute;
+  width: 145px;
+  top: 0;
+  left: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 76px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-16 {
+  position: absolute;
+  width: 1122px;
+  height: 428px;
+  top: 4334px;
+  left: 160px;
+}
+
+.escape-room .visit-a-location {
+  position: absolute;
+  height: 36px;
+  top: 0;
+  left: 148px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-sub-headline);
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .frame-4 {
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+  position: absolute;
+  top: 76px;
+  left: 0;
+  display: none;
+}
+
+.escape-room .frame-wrapper {
+  position: relative;
+  width: 352px;
+  height: 352px;
+  border-radius: 24px;
+  background-image: url(./img/frame-804.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .div-wrapper {
+  display: flex;
+  width: 352px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 36px;
+  position: relative;
+  top: 304px;
+  border-radius: 24px;
+  border: 0.5px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  background: linear-gradient(225deg, rgba(255, 174, 0, 1) 0%, rgba(248, 126, 0, 1) 100%);
+  left: -165px;
+}
+
+.escape-room .text-wrapper-18 {
+  position: relative;
+  width: fit-content;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .frame-5 {
+  position: relative;
+  width: 352px;
+  height: 352px;
+  border-radius: 24px;
+  background-image: url(./img/frame-803.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .frame-6 {
+  position: relative;
+  width: 352px;
+  height: 352px;
+  border-radius: 24px;
+  background-image: url(./img/frame-802.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .group-17 {
+  position: absolute;
+  width: 1122px;
+  height: 432px;
+  top: 5897px;
+  left: 160px;
+}
+
+.escape-room .text-wrapper-19 {
+  position: absolute;
+  top: 0;
+  left: 276px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-sub-headline);
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 39.6px;
+  white-space: nowrap;
+}
+
+.escape-room .frame-7 {
+  display: flex;
+  width: 1120px;
+  align-items: center;
+  gap: 210px;
+  position: absolute;
+  top: -500px;
+  left: -119px;
+  overflow: hidden;
+}
+
+.escape-room .frame-8 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./images/internshipblog.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .frame-9 {
+ display: flex;
+        width: 292px;
+        height: 40px;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 16px 24px;
+        position: relative;
+        background-color: var(--tokens-overlay-card);
+        border-radius: 20px;
+        border: 0.5px solid;
+        border-color: var(--tokens-card-and-button-strokes);
+        backdrop-filter: blur(16px) brightness(100%);
+        -webkit-backdrop-filter: blur(16px) brightness(100%);
+}
+
+.escape-room .text-wrapper-20 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 36px;
+  letter-spacing: 0.1px;
+  line-height: 22px;
+  white-space: nowrap;
+  top: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-10 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./images/careeradvice.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .frame-11 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./images/myths.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .text-wrapper-21 {
+  position: relative;
+  width: 290px;
+  margin-top: -0.5px;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  line-height: 22px;
+  top: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-12 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./img/frame-790.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .overlap-group-wrapper {
+  position: absolute;
+  width: 1126px;
+  height: 468px;
+  top: 6529px;
+  left: 160px;
+}
+
+.escape-room .overlap-group {
+  position: relative;
+  width: 888px;
+  height: 468px;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(2px) brightness(100%);
+  -webkit-backdrop-filter: blur(2px) brightness(100%);
+  left: -116px;
+  top: -500px
+}
+
+.escape-room .overlap-2 {
+  position: absolute;
+  width: 887px;
+  height: 284px;
+  top: 184px;
+  left: 2px;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  border: 1px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  backdrop-filter: blur(2px) brightness(100%);
+  -webkit-backdrop-filter: blur(2px) brightness(100%);
+}
+
+.escape-room .group-18 {
+  position: absolute;
+  width: 418px;
+  height: 30px;
+  top: 69px;
+  left: 63px;
+}
+
+.escape-room .text-wrapper-22 {
+  position: absolute;
+  width: 92px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.escape-room .vector {
+  top: 30px;
+  left: 0;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .group-19 {
+  position: absolute;
+  width: 418px;
+  height: 30px;
+  top: 119px;
+  left: 63px;
+}
+
+.escape-room .text-wrapper-23 {
+  position: absolute;
+  width: 168px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.escape-room .group-20 {
+  position: absolute;
+  width: 416px;
+  height: 44px;
+  top: 169px;
+  left: 63px;
+}
+
+.escape-room .vector-2 {
+  top: 44px;
+  left: 0;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .group-21 {
+  position: absolute;
+  width: 418px;
+  height: 32px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .text-wrapper-24 {
+  position: absolute;
+  height: 20px;
+  top: 12px;
+  left: 0;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .stat-minus-wrapper {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: 384px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  border: 0.5px solid;
+  border-color: var(--tokens-text);
+}
+
+.escape-room .stat-minus {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: 4px;
+}
+
+.escape-room .text-wrapper-25 {
+  position: absolute;
+  width: 117px;
+  height: 18px;
+  top: 69px;
+  left: 639px;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.escape-room .vector-3 {
+  top: 98px;
+  left: 639px;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .vector-4 {
+  top: 138px;
+  left: 639px;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .vector-5 {
+  top: 178px;
+  left: 639px;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .main-enable-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  position: absolute;
+  top: 203px;
+  left: 639px;
+}
+
+.escape-room .main-enable-2 {
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+  border: 0.6px solid;
+  background: #27AE60;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 12px;
+  border-radius: 100px;
+  border-color: var(--tokens-card-and-button-strokes);
+  left: -130px;
+  top: 30px;
+}
+
+.escape-room .text-wrapper-26 {
+  position: absolute;
+  top: 46px;
+  left: 64px;
+  font-family: math;
+  font-weight: 700;
+  color: var(--breakout-breakout-breakout-primary-500);
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.escape-room .group-22 {
+  position: absolute;
+  width: 444px;
+  height: 44px;
+  top: 104px;
+  left: 640px;
+}
+
+.escape-room .component {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 398px;
+  background-image: url(./img/component-13.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .text-wrapper-27 {
+  position: absolute;
+  top: 10px;
+  left: -89px;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.escape-room .group-23 {
+  position: absolute;
+  width: 112px;
+  height: 44px;
+  top: 104px;
+  left: 368px;
+}
+
+.escape-room .component-2 {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 68px;
+  background-image: url(./img/component-12.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .component-3 {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/component-14.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .text-wrapper-28 {
+  position: absolute;
+  top: 114px;
+  left: 64px;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.escape-room .group-24 {
+  position: absolute;
+  width: 1440px;
+  height: 140px;
+  top: 7197px;
+  left: 0;
+}
+
+.escape-room .group-25 {
+  height: 140px;
+  background-color: var(--tokens-header);
+}
+
+.escape-room .frame-13 {
+  display: flex;
+  width: 1440px;
+  align-items: center;
+  justify-content: center;
+  gap: 162px;
+  padding: 40px 160px;
+  position: relative;
+  background-color:#2C3E50;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  top: -498px;
+}
+
+.escape-room .image {
+         position: relative;
+        width: 271px;
+        height: 100px;
+        top: -15px;
+        left: -262px;
+}
+
+.escape-room .group-26 {
+  position: relative;
+  width: 141.32px;
+  height: 26.08px;
+}
+
+.escape-room .vector-6 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -46px;
+  left: -340px;
+}
+
+.escape-room .group-27 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -46px;
+  left: -210px;
+}
+
+.escape-room .group-28 {
+  position: absolute;
+  width: 80px;
+        height: 80px;
+        top: -46px;
+  left: -70px;
+}
+
+.escape-room .group-29 {
+  position: relative;
+  width: 382px;
+  height: 20px;
+  margin-right: -0.16px;
+}
+
+.escape-room .text-wrapper-29 {
+  position: absolute;
+  height: 20px;
+  top: 10px;
+  left: -450px;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .group-30 {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .group-31 {
+  position: relative;
+  width: 17px;
+  height: 15px;
+  top: 2px;
+  left: 2px;
+}
+
+.escape-room .overlap-group-2 {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  border: 1.35px solid;
+  border-color: var(--tokens-text);
+}
+
+.escape-room .text-wrapper-30 {
+  position: absolute;
+  width: 8px;
+  height: 9px;
+  top: 2px;
+  left: 2px;
+  font-family: "Arial-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 9.8px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-32 {
+  position: absolute;
+  width: 1122px;
+  height: 735px;
+  top: 4962px;
+  left: 160px;
+}
+
+.escape-room .peek-into-an {
+ position: absolute;
+ top: -670px;
+ left: -125px;
+ font-family: math;
+ font-weight: 500;
+ color: var(--tokens-sub-headline);
+ font-size: 50px;
+ text-align: center;
+ letter-spacing: 0;
+ line-height: 39.6px;
+ white-space: nowrap;
+ font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.escape-room .group-33 {
+  position: absolute;
+  width: 1128px;
+  height: 655px;
+  top: -408px;
+  left: -34px;
+}
+
+.escape-room .overlap-group-3 {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  top: 355px;
+  left: -83px;
+  background-image: url(./images/showcaseport.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+}
+
+.escape-room .rectangle {
+ position: absolute;
+ width: 325px;
+ width: 403px;
+ t: 80px;
+ top: 220px;
+ left: -1px;
+ background-color: var(--tokens-overlay-card);
+ border-radius: 18px;
+ border: 1px solid;
+ border-color: var(--tokens-card-and-button-strokes);
+ backdrop-filter: blur(16px) brightness(100%);
+ -webkit-backdrop-filter: blur(16px) brightness(100%);
+}
+
+.escape-room .text-wrapper-31 {
+  position: absolute;
+  height: 33px;
+  top: 244px;
+  left: 53px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .overlap-3 {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  top: 0;
+  left: -85px;
+  background-image: url(./images/mentorjourney.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.overlap-3:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+.escape-room .text-wrapper-32 {
+  position: absolute;
+  height: 33px;
+  top: 244px;
+  left: 35px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .overlap-4 {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  top: 0;
+  left: 408px;
+  background-image: url(./images/testimonials.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+}
+
+.escape-room .text-wrapper-33 {
+  position: absolute;
+  height: 33px;
+  top: 243px;
+  left: 33px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .overlap-5 {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  top: 355px;
+  left: 406px;
+  background-image: url(./images/outcomereview.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+}
+
+.escape-room .text-wrapper-34 {
+  position: absolute;
+  height: 33px;
+  top: 244px;
+  left: 33px;
+  font-family: math;
+  color: var(--tokens-text);
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .group-34 {
+  position: absolute;
+  width: 1120px;
+  height: 1330px;
+  top: 2536px;
+  left: 39px;
+}
+
+.escape-room .frame-14 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 98px;
+  position: absolute;
+  top: 470px;
+  left: 0;
+}
+
+.escape-room .frame-15 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 43px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .img-2 {
+   position: relative;
+        width: 360px;
+        height: 309px;
+        border-radius: 16px;
+        border: 2px solid;
+        left: -4px;
+
+}
+
+.escape-room .text-wrapper-35 {
+         position: relative;
+        width: fit-content;
+        font-family: math;
+        font-weight: 500;
+        color: #1F3C88;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 26.4px;
+        white-space: nowrap;
+        left: 32px;
+        font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-16 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+  display: none;
+}
+
+.escape-room .frame-17 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.escape-room .text-wrapper-36 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text-headline);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 17.6px;
+  white-space: nowrap;
+}
+
+.escape-room .text-wrapper-37 {
+  margin-top: -1px;
+  text-align: center;
+  position: relative;
+  width: fit-content;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 17.6px;
+  white-space: nowrap;
+}
+
+.escape-room .img-3 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.escape-room .text-wrapper-38 {
+  position: relative;
+  width: fit-content;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 17.6px;
+  white-space: nowrap;
+}
+
+.escape-room .frame-18 {
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.escape-room .confirmation-number-wrapper {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border: 0.5px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  display: none;
+}
+
+.escape-room .confirmation-number {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 6px;
+  left: 6px;
+}
+
+.escape-room .frame-19 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 50px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.frame-19:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+.escape-room .frame-20 {
+  align-items: flex-end;
+  gap: 20px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+  display: none;
+}
+
+.escape-room .frame-21 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 98px;
+  position: absolute;
+  top: 940px;
+  left: 0;
+}
+
+.escape-room .frame-22 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: flex-end;
+  gap: 12px 50px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.frame-22:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+.escape-room .frame-23 {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.escape-room .frame-24 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: flex-end;
+  gap: 12px 21px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .text-wrapper-39 {
+          position: relative;
+        width: fit-content;
+        font-family: math;
+        font-weight: 500;
+        color: #1F3C88;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 26.4px;
+        white-space: nowrap;
+        left: 32px;
+        font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-25 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 22px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .frame-26 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 98px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .frame-27 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 45px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .frame-28 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 49px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .escape-rooms {
+  position: absolute;
+  top: 2317px;
+  left: 302px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 39.6px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.escape-room .rectangle-2 {
+  position: fixed;
+  width: 1440px;
+  height: 138px;
+  top: 0;
+  left: 0;
+  background-color: #2C3E50;
+}
+
+.escape-room .image-2 {
+  position: fixed;
+  width: 250px;
+  height: 100px;
+  top: 31px;
+  left: 48px;
+}
+
+.escape-room .navbar {
+  position: fixed;
+  width: 461px;
+  height: 20px;
+  top: 38px;
+  left: 350px;
+  
+}
+
+.escape-room .text-wrapper-40 {
+  left: -46px;
+  position: absolute;
+  height: 20px;
+  top: 30px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-41 {
+  position: absolute;
+  height: 20px;
+  top: 30px;
+  left: 88px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-42 {
+  left: 274px;
+  position: absolute;
+  height: 20px;
+  top: 30px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-43 {
+  left: 368px;
+  position: absolute;
+  height: 20px;
+  top: 30px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  display: none;
+}
+
+.escape-room .component-4 {
+  position: fixed;
+  width: 180px;
+  height: 44px;
+  top: 26px;
+  left: 1100px;
+}
+
+.escape-room .menu-wrapper {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  left: 136px;
+  background-color: var(--tokens-secondary-button);
+  border-radius: 22px;
+  border: 0.5px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .menu {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  left: 10px;
+}
+
+.escape-room .component-5 {
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  top: 26px;
+  left: 919px;
+  background-image: url(./img/component-24.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .main-enable-3 {
+  display: inline-flex;
+  align-items: flex-start;
+  position: fixed;
+  top: 26px;
+  left: 987px;
+}
+
+.escape-room .component-6 {
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  top: 26px;
+  left: 1166px;
+  background-image: url(./img/component-14-2.svg);
+  background-size: 100% 100%;
+}
+
+/* CSS CODE FOR CONTACT FORM */
+.escape-room-sample{
+  background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        top: 6489px;
+        height: 2px;
+}
+
+.form-group{
+  font-size: 20px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bolder;
+    font-family: math;
+    color: black;
+}
+
+.contact-info{
+      margin-top: 30px;
+    font-size: 20px;
+    color: #1A1A1A;
+    position: relative;
+    left: 470px;
+    top: -84px;
+    font-family: math;
+    font-weight: bolder;
+}
+
+#name, #phone, #cars, #message{
+      width: 91%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+    outline: none;
+    font-family: math;
+}
+
+#looking-for{
+  display: none;
+}
+
+.overlap-group-sample{
+  position: relative;
+    width: 800px;
+    height: 468px;
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin: 50px auto;
+    padding: 40px;
+    border: 4px solid black;
+    top:-530px;
+}
+
+/* CSS CODE FOR CONTACT FORM */
+
+
+}
+
+/* DESKTOP _ SMALL _ CSS_ HERE*/
+@media (min-width: 1024px) {
+  .escape-room {
+  background-color: #040707;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.escape-room .div {
+  background-color: #F8F9FA;
+  overflow: hidden;
+  width: 1440px;
+  height: 6840px;
+  position: relative;
+}
+
+.escape-room .overlap {
+  position: absolute;
+  width: 1443px;
+  height: 783px;
+  top: -296px;
+  left: 324px;
+}
+
+.escape-room .ellipse {
+  position: absolute;
+  width: 780px;
+  height: 780px;
+  top: 0;
+  left: 663px;
+  background-color: #F8F9FA;
+  border-radius: 390px;
+  filter: blur(500px);
+}
+
+.escape-room .step-in-break-out {
+  position: relative;
+  width: 1207px;
+  height: 80px;
+  top: 479px;
+  left: -230px;
+  
+  color: var(--tokens-text);
+  font-size: 44px;
+  letter-spacing: -1px;
+  line-height: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper {
+  color: #2E2E2E;
+}
+
+.escape-room .span {
+  color: #1F3C88;
+}
+
+.escape-room .an-experience-so {
+  position: absolute;
+  width: 814px;
+  height: 20px;
+  top: 644px;
+  left: -203px;
+  font-family: math;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.escape-room .p {
+  position: absolute;
+  height: 36px;
+  top: 556px;
+  left: -167px;
+  font-family: math;
+  font-weight: 500;
+  color: #2E2E2E;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.escape-room .main-enable {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 36px;
+  position: absolute;
+  top: 442px;
+  left: 233px;
+  border-radius: 100px;
+  border: 0.6px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  background: linear-gradient(225deg, rgba(255, 174, 0, 1) 0%, rgba(248, 126, 0, 1) 100%);
+}
+
+.escape-room .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.6px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .main-disabled {
+  display: flex;
+  width: 159px;
+  height: 44px;
+  position: absolute;
+  top: 430px;
+  left: 556px;
+  background-color: #27AE60;
+  border: 1px solid;
+  backdrop-filter: blur(10px) brightness(100%);
+  -webkit-backdrop-filter: blur(10px) brightness(100%);
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 36px;
+  border-radius: 100px;
+  border-color: var(--tokens-card-and-button-strokes);
+}
+
+.escape-room .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  margin-left: -11.5px;
+  margin-right: -11.5px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .group {
+  position: absolute;
+  width: 187px;
+  height: 16px;
+  top: 648px;
+  left: 536px;
+}
+
+.escape-room .text-wrapper-4 {
+  position: absolute;
+  height: 15px;
+  top: -154px;
+  left: -250px;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #858787;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 14.6px;
+  white-space: nowrap;
+}
+
+.escape-room .encrypted {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -157px;
+  left: -278px;
+  display: none;
+}
+
+.escape-room .designer {
+  position: absolute;
+  width: 920px;
+  height: 550px;
+  top: 610px;
+  left: 38px;
+  border-radius: 8px;
+  border: 2px solid;
+}
+
+.escape-room .flexcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  position: absolute;
+  width: 850px;
+  height: 180px;
+  top: 1413px;
+  left: 259px;
+}
+
+.escape-room .text {
+  position: relative;
+        align-self: stretch;
+        font-family: math;
+        font-weight: 500;
+        color: transparent;
+        font-size: 38px;
+        letter-spacing: 1.08px;
+        line-height: normal;
+        left: -222px;
+        top: -234px;
+        width: 980px;
+}
+
+.escape-room .text-wrapper-5 {
+          color: #1F3C88;
+        letter-spacing: 0.39px;
+        position: relative;
+        top: -68px;
+}
+
+.escape-room .text-wrapper-6 {
+  color: #ffae00;
+  letter-spacing: 0.39px;
+}
+
+.escape-room .in-our-evolved {
+                position: absolute;
+        height: 52px;
+        top: 1657px;
+        left: 222px;
+        font-family: math;
+        font-weight: 500;
+        color: transparent;
+        font-size: 52px;
+        letter-spacing: 1.08px;
+        line-height: 52px;
+        white-space: nowrap;
+        font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.escape-room .group-2 {
+  position: absolute;
+  width: 1120px;
+  height: 181px;
+  top: 1815px;
+  left: 160px;
+}
+
+.escape-room .group-3 {
+  position: absolute;
+  width: 174px;
+  height: 170px;
+  top: 11px;
+  left: 308px;
+}
+
+.escape-room .puzzle-svgrepo-com {
+  position: absolute;
+  width: 106px;
+  height: 106px;
+  top: 0;
+  left: 33px;
+  background-image: url(./img/group-3.png);
+  background-size: 100% 100%;
+}
+
+.escape-room .text-wrapper-7 {
+  position: absolute;
+  height: 24px;
+  top: 146px;
+  left: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #ffae00;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.escape-room .group-4 {
+  position: absolute;
+  width: 155px;
+  height: 164px;
+  top: 17px;
+  left: 0;
+}
+
+.escape-room .text-wrapper-8 {
+  position: absolute;
+        height: 24px;
+        top: 140px;
+        left: -104px;
+        font-family: math;
+        font-weight: 500;
+        color: #1A1A1A;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: 24px;
+        white-space: nowrap;
+}
+
+.escape-room .camera-svgrepo {
+  position: absolute;
+  width: 116px;
+  height: 116px;
+  top: 0;
+  left: 19px;
+}
+
+.escape-room .img {
+  position: absolute;
+        width: 130px;
+        height: 130px;
+        top: 0;
+        left: -123px;
+        border-radius: 12px;
+}
+
+.escape-room .group-5 {
+  position: absolute;
+  width: 144px;
+  height: 181px;
+  top: 0;
+  left: 581px;
+}
+
+.escape-room .text-wrapper-9 {
+          position: absolute;
+        height: 24px;
+        top: 157px;
+        left: 33px;
+        font-family: math;
+        font-weight: 500;
+        color: #1A1A1A;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: 24px;
+        white-space: nowrap;
+}
+
+.escape-room .detective-face {
+  position: absolute;
+  width: 142px;
+  height: 142px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .group-6 {
+          position: absolute;
+        width: 130px;
+        height: 130px;
+        top: 24px;
+        left: 90px;
+        border-radius: 12px;
+}
+
+.escape-room .group-7 {
+  position: absolute;
+  width: 190px;
+  height: 159px;
+  top: 22px;
+  left: 420px;
+}
+
+.escape-room .text-wrapper-10 {
+        position: absolute;
+        height: 24px;
+        top: 135px;
+        left: -125px;
+        font-family: math;
+        font-weight: 500;
+        color: #1A1A1A;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 24px;
+        white-space: nowrap;
+}
+
+.escape-room .image-circle-story {
+   position: absolute;
+        width: 130px;
+        height: 130px;
+        top: 0;
+        left: -124px;
+        border-radius: 12px;
+}
+
+.escape-room .group-8 {
+  position: absolute;
+  width: 1120px;
+  height: 60px;
+  top: 2196px;
+  left: 160px;
+}
+
+.escape-room .frame {
+  position: absolute;
+  width: 352px;
+  height: 60px;
+  top: 0;
+  left: -120px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .img-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 134px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: none;
+}
+
+.escape-room .the-pioneer {
+  position: relative;
+  width: 91.12px;
+  height: 18px;
+  margin-left: -2.56px;
+  margin-right: -2.56px;
+}
+
+.escape-room .text-wrapper-11 {
+  position: absolute;
+        height: 16px;
+        top: 13px;
+        left: 98px;
+        font-family: math;
+        font-weight: 400;
+        color: #28A745;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+}
+
+.escape-room .text-wrapper-12 {
+        position: absolute;
+        height: 12px;
+        top: 40px;
+        left: 140px;
+        font-family: math;
+        font-weight: 400;
+        color: #1A1A1A;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+}
+
+.escape-room .frame-2 {
+  position: absolute;
+  width: 352px;
+  height: 60px;
+  top: 0;
+  left: 450px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .the-indian-express {
+  position: relative;
+  width: 114px;
+  height: 11px;
+  margin-left: -14px;
+  margin-right: -14px;
+  object-fit: cover;
+}
+
+.escape-room .frame-3 {
+  position: absolute;
+  width: 352px;
+  height: 60px;
+  top: 0;
+  left: 940px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .zee-business-channel {
+  position: relative;
+  width: 79px;
+  height: 30px;
+}
+
+.escape-room .group-9 {
+  position: absolute;
+  width: 1119px;
+  height: 68px;
+  top: 4066px;
+  left: -399px;
+}
+
+.escape-room .group-10 {
+ position: absolute;
+ width: 312px;
+ height: 67px;
+ top: 0;
+ left: 991px;
+}
+
+.escape-room .group-11 {
+  position: absolute;
+  width: 140px;
+  height: 64px;
+  top: 2px;
+  left: 174px;
+}
+
+.escape-room .text-wrapper-13 {
+  position: absolute;
+  height: 36px;
+  top: 0;
+  left: 0;
+  font-family: math;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-14 {
+  position: absolute;
+  height: 20px;
+  top: 44px;
+  left: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #DC3545;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .text-wrapper-15 {
+  position: absolute;
+  width: 150px;
+  top: 0;
+  left: -8px;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 76px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-12 {
+ position: absolute;
+        width: 312px;
+        height: 68px;
+        top: 0;
+        left: 431px;
+
+}
+
+.escape-room .group-13 {
+  position: absolute;
+  width: 246px;
+  height: 64px;
+  top: 2px;
+  left: 140px;
+}
+
+.escape-room .text-wrapper-16 {
+  position: absolute;
+  width: 44px;
+  top: 0;
+  left: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 76px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-wrapper {
+  position: absolute;
+  width: 363px;
+  height: 67px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .group-14 {
+position: relative;
+        width: 365px;
+        height: 67px;
+        left: -108px;
+}
+
+.escape-room .group-15 {
+  position: absolute;
+  width: 198px;
+  height: 64px;
+  top: 2px;
+  left: 169px;
+}
+
+.escape-room .text-wrapper-17 {
+  position: absolute;
+  width: 145px;
+  top: 0;
+  left: 0;
+  font-family: math;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 76px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-16 {
+  position: absolute;
+  width: 1122px;
+  height: 428px;
+  top: 4334px;
+  left: 160px;
+}
+
+.escape-room .visit-a-location {
+  position: absolute;
+  height: 36px;
+  top: 0;
+  left: 148px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-sub-headline);
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .frame-4 {
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+  position: absolute;
+  top: 76px;
+  left: 0;
+  display: none;
+}
+
+.escape-room .frame-wrapper {
+  position: relative;
+  width: 352px;
+  height: 352px;
+  border-radius: 24px;
+  background-image: url(./img/frame-804.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .div-wrapper {
+  display: flex;
+  width: 352px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 36px;
+  position: relative;
+  top: 304px;
+  border-radius: 24px;
+  border: 0.5px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  background: linear-gradient(225deg, rgba(255, 174, 0, 1) 0%, rgba(248, 126, 0, 1) 100%);
+  left: -165px;
+}
+
+.escape-room .text-wrapper-18 {
+  position: relative;
+  width: fit-content;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .frame-5 {
+  position: relative;
+  width: 352px;
+  height: 352px;
+  border-radius: 24px;
+  background-image: url(./img/frame-803.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .frame-6 {
+  position: relative;
+  width: 352px;
+  height: 352px;
+  border-radius: 24px;
+  background-image: url(./img/frame-802.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .group-17 {
+  position: absolute;
+  width: 1122px;
+  height: 432px;
+  top: 5897px;
+  left: 160px;
+}
+
+.escape-room .text-wrapper-19 {
+  position: absolute;
+  top: 0;
+  left: 276px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-sub-headline);
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 39.6px;
+  white-space: nowrap;
+}
+
+.escape-room .frame-7 {
+  display: flex;
+  width: 1120px;
+  align-items: center;
+  gap: 238px;
+  position: absolute;
+  top: -500px;
+  left: -119px;
+  overflow: hidden;
+}
+
+.escape-room .frame-8 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./images/internshipblog.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .frame-9 {
+ display: flex;
+        width: 292px;
+        height: 40px;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 16px 24px;
+        position: relative;
+        background-color: var(--tokens-overlay-card);
+        border-radius: 20px;
+        border: 0.5px solid;
+        border-color: var(--tokens-card-and-button-strokes);
+        backdrop-filter: blur(16px) brightness(100%);
+        -webkit-backdrop-filter: blur(16px) brightness(100%);
+}
+
+.escape-room .text-wrapper-20 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 40px;
+  letter-spacing: 0.1px;
+  line-height: 22px;
+  white-space: nowrap;
+  top: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-10 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./images/careeradvice.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .frame-11 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./images/myths.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .text-wrapper-21 {
+  position: relative;
+  width: 290px;
+  margin-top: -0.5px;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  line-height: 22px;
+  top: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-12 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./img/frame-790.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .overlap-group-wrapper {
+  position: absolute;
+  width: 1126px;
+  height: 468px;
+  top: 6529px;
+  left: 160px;
+}
+
+.escape-room .overlap-group {
+  position: relative;
+  width: 888px;
+  height: 468px;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(2px) brightness(100%);
+  -webkit-backdrop-filter: blur(2px) brightness(100%);
+  left: -105px;
+  top: -500px
+}
+
+.escape-room .overlap-2 {
+  position: absolute;
+  width: 887px;
+  height: 284px;
+  top: 184px;
+  left: 2px;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  border: 1px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  backdrop-filter: blur(2px) brightness(100%);
+  -webkit-backdrop-filter: blur(2px) brightness(100%);
+}
+
+.escape-room .group-18 {
+  position: absolute;
+  width: 418px;
+  height: 30px;
+  top: 69px;
+  left: 63px;
+}
+
+.escape-room .text-wrapper-22 {
+  position: absolute;
+  width: 92px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.escape-room .vector {
+  top: 30px;
+  left: 0;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .group-19 {
+  position: absolute;
+  width: 418px;
+  height: 30px;
+  top: 119px;
+  left: 63px;
+}
+
+.escape-room .text-wrapper-23 {
+  position: absolute;
+  width: 168px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.escape-room .group-20 {
+  position: absolute;
+  width: 416px;
+  height: 44px;
+  top: 169px;
+  left: 63px;
+}
+
+.escape-room .vector-2 {
+  top: 44px;
+  left: 0;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .group-21 {
+  position: absolute;
+  width: 418px;
+  height: 32px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .text-wrapper-24 {
+  position: absolute;
+  height: 20px;
+  top: 12px;
+  left: 0;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .stat-minus-wrapper {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: 384px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  border: 0.5px solid;
+  border-color: var(--tokens-text);
+}
+
+.escape-room .stat-minus {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: 4px;
+}
+
+.escape-room .text-wrapper-25 {
+  position: absolute;
+  width: 117px;
+  height: 18px;
+  top: 69px;
+  left: 639px;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.escape-room .vector-3 {
+  top: 98px;
+  left: 639px;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .vector-4 {
+  top: 138px;
+  left: 639px;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .vector-5 {
+  top: 178px;
+  left: 639px;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .main-enable-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  position: absolute;
+  top: 203px;
+  left: 639px;
+}
+
+.escape-room .main-enable-2 {
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+  border: 0.6px solid;
+  background: #27AE60;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 12px;
+  border-radius: 100px;
+  border-color: var(--tokens-card-and-button-strokes);
+  left: -92px;
+  top: 30px;
+}
+
+.escape-room .text-wrapper-26 {
+  position: absolute;
+  top: 46px;
+  left: 64px;
+  font-family: math;
+  font-weight: 700;
+  color: var(--breakout-breakout-breakout-primary-500);
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.escape-room .group-22 {
+  position: absolute;
+  width: 444px;
+  height: 44px;
+  top: 104px;
+  left: 640px;
+}
+
+.escape-room .component {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 398px;
+  background-image: url(./img/component-13.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .text-wrapper-27 {
+  position: absolute;
+  top: 10px;
+  left: -95px;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.escape-room .group-23 {
+  position: absolute;
+  width: 112px;
+  height: 44px;
+  top: 104px;
+  left: 368px;
+}
+
+.escape-room .component-2 {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 68px;
+  background-image: url(./img/component-12.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .component-3 {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/component-14.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .text-wrapper-28 {
+  position: absolute;
+  top: 114px;
+  left: 64px;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.escape-room .group-24 {
+  position: absolute;
+  width: 1440px;
+  height: 140px;
+  top: 7197px;
+  left: 0;
+}
+
+.escape-room .group-25 {
+  height: 140px;
+  background-color: var(--tokens-header);
+}
+
+.escape-room .frame-13 {
+  display: flex;
+  width: 1440px;
+  align-items: center;
+  justify-content: center;
+  gap: 162px;
+  padding: 40px 160px;
+  position: relative;
+  background-color:#2C3E50;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  top: -498px;
+}
+
+.escape-room .image {
+          position: relative;
+        width: 271px;
+        height: 100px;
+        top: -15px;
+        left: -262px;
+}
+
+.escape-room .group-26 {
+  position: relative;
+  width: 141.32px;
+  height: 26.08px;
+}
+
+.escape-room .vector-6 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -46px;
+  left: -340px;
+}
+
+.escape-room .group-27 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -46px;
+  left: -100px;
+}
+
+.escape-room .group-28 {
+  position: absolute;
+  width: 80px;
+        height: 80px;
+        top: -46px;
+  left: 125px;
+}
+
+.escape-room .group-29 {
+  position: relative;
+  width: 382px;
+  height: 20px;
+  margin-right: -0.16px;
+}
+
+.escape-room .text-wrapper-29 {
+  position: absolute;
+  height: 20px;
+  top: 0;
+  left: 30px;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .group-30 {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .group-31 {
+  position: relative;
+  width: 17px;
+  height: 15px;
+  top: 2px;
+  left: 2px;
+}
+
+.escape-room .overlap-group-2 {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  border: 1.35px solid;
+  border-color: var(--tokens-text);
+}
+
+.escape-room .text-wrapper-30 {
+  position: absolute;
+  width: 8px;
+  height: 9px;
+  top: 2px;
+  left: 2px;
+  font-family: "Arial-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 9.8px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-32 {
+  position: absolute;
+  width: 1122px;
+  height: 735px;
+  top: 4962px;
+  left: 153px;
+}
+
+.escape-room .peek-into-an {
+  position: absolute;
+  top: -670px;
+  left: -61px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-sub-headline);
+  font-size: 52px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 39.6px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.escape-room .group-33 {
+ position: absolute;
+ width: 1128px;
+ height: 655px;
+ top: -408px;
+ left: -34px;
+}
+
+.escape-room .overlap-group-3 {
+  position: absolute;
+  width: 430px;
+  height: 300px;
+  top: 355px;
+  left: -83px;
+  background-image: url(./images/showcaseport.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+}
+
+.escape-room .rectangle {
+ position: absolute;
+ width: 430px;
+ height: 80px;
+ top: 220px;
+ left: -1px;
+ background-color: var(--tokens-overlay-card);
+ border-radius: 18px;
+ border: 1px solid;
+ border-color: var(--tokens-card-and-button-strokes);
+ backdrop-filter: blur(16px) brightness(100%);
+ -webkit-backdrop-filter: blur(16px) brightness(100%);
+}
+
+.escape-room .text-wrapper-31 {
+  position: absolute;
+  height: 33px;
+  top: 244px;
+  left: 53px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 38px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .overlap-3 {
+  position: absolute;
+  width: 430px;
+  height: 300px;
+  top: 0;
+  left: -85px;
+  background-image: url(./images/mentorjourney.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+}
+
+.escape-room .text-wrapper-32 {
+  position: absolute;
+  height: 33px;
+  top: 244px;
+  left: 35px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 38px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .overlap-4 {
+  position: absolute;
+  width: 430px;
+  height: 300px;
+  top: 0;
+  left: 405px;
+  background-image: url(./images/testimonials.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+}
+
+.overlap-4:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+.escape-room .text-wrapper-33 {
+  position: absolute;
+  height: 33px;
+  top: 243px;
+  left: 33px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 38px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .overlap-5 {
+  position: absolute;
+  width: 430px;
+  height: 300px;
+  top: 355px;
+  left: 405px;
+  background-image: url(./images/outcomereview.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+}
+
+.escape-room .text-wrapper-34 {
+  position: absolute;
+  height: 33px;
+  top: 244px;
+  left: 33px;
+  font-family: math;
+  color: var(--tokens-text);
+  font-size: 38px;
+  letter-spacing: 0;
+  line-height: 33px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .group-34 {
+  position: absolute;
+  width: 1120px;
+  height: 1330px;
+  top: 2536px;
+  left: 39px;
+}
+
+.escape-room .frame-14 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 124px;
+  position: absolute;
+  top: 470px;
+  left: 0;
+}
+
+.escape-room .frame-15 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 43px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .img-2 {
+   position: relative;
+        width: 360px;
+        height: 309px;
+        border-radius: 16px;
+        border: 2px solid;
+        left: -4px;
+
+}
+
+.escape-room .text-wrapper-35 {
+         position: relative;
+        width: fit-content;
+        font-family: math;
+        font-weight: 500;
+        color: #1F3C88;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 26.4px;
+        white-space: nowrap;
+        left: 32px;
+        font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-16 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+  display: none;
+}
+
+.escape-room .frame-17 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.escape-room .text-wrapper-36 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text-headline);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 17.6px;
+  white-space: nowrap;
+}
+
+.escape-room .text-wrapper-37 {
+  margin-top: -1px;
+  text-align: center;
+  position: relative;
+  width: fit-content;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 17.6px;
+  white-space: nowrap;
+}
+
+.escape-room .img-3 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.escape-room .text-wrapper-38 {
+  position: relative;
+  width: fit-content;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 17.6px;
+  white-space: nowrap;
+}
+
+.escape-room .frame-18 {
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.escape-room .confirmation-number-wrapper {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border: 0.5px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  display: none;
+}
+
+.escape-room .confirmation-number {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 6px;
+  left: 6px;
+}
+
+.escape-room .frame-19 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 50px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .frame-20 {
+  align-items: flex-end;
+  gap: 20px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+  display: none;
+}
+
+.escape-room .frame-21 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 124px;
+  position: absolute;
+  top: 940px;
+  left: 0;
+}
+
+.escape-room .frame-22 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: flex-end;
+  gap: 12px 50px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .frame-23 {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.escape-room .frame-24 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: flex-end;
+  gap: 12px 21px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .text-wrapper-39 {
+        position: relative;
+        width: fit-content;
+        font-family: math;
+        font-weight: 500;
+        color: #1F3C88;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 26.4px;
+        white-space: nowrap;
+        left: 32px;
+        font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-25 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 22px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .frame-26 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 124px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .frame-27 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 45px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .frame-28 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 49px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .escape-rooms {
+  position: absolute;
+  top: 2317px;
+  left: 322px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 39.6px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.escape-room .rectangle-2 {
+  position: fixed;
+  width: 1440px;
+  height: 138px;
+  top: 0;
+  left: 0;
+  background-color: #2C3E50;
+}
+
+.escape-room .image-2 {
+  position: fixed;
+  width: 250px;
+  height: 100px;
+  top: 31px;
+  left: 48px;
+}
+
+.escape-room .navbar {
+  position: fixed;
+  width: 461px;
+  height: 20px;
+  top: 38px;
+  left: 350px;
+  
+}
+
+.escape-room .text-wrapper-40 {
+  left: -46px;
+  position: absolute;
+  height: 20px;
+  top: 30px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-41 {
+  position: absolute;
+  height: 20px;
+  top: 30px;
+  left: 92px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-42 {
+  left: 289px;
+  position: absolute;
+  height: 20px;
+  top: 30px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-43 {
+  left: 368px;
+  position: absolute;
+  height: 20px;
+  top: 30px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  display: none;
+}
+
+.escape-room .component-4 {
+  position: fixed;
+  width: 180px;
+  height: 44px;
+  top: 26px;
+  left: 1100px;
+}
+
+.escape-room .menu-wrapper {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  left: 136px;
+  background-color: var(--tokens-secondary-button);
+  border-radius: 22px;
+  border: 0.5px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .menu {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  left: 10px;
+}
+
+.escape-room .component-5 {
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  top: 26px;
+  left: 919px;
+  background-image: url(./img/component-24.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .main-enable-3 {
+  display: inline-flex;
+  align-items: flex-start;
+  position: fixed;
+  top: 26px;
+  left: 987px;
+}
+
+.escape-room .component-6 {
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  top: 26px;
+  left: 1166px;
+  background-image: url(./img/component-14-2.svg);
+  background-size: 100% 100%;
+}
+
+/* CSS CODE FOR CONTACT FORM */
+.escape-room-sample{
+  background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        top: 6489px;
+        height: 2px;
+}
+
+.form-group{
+  font-size: 20px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bolder;
+    font-family: math;
+    color: black;
+}
+
+.contact-info{
+      margin-top: 30px;
+    font-size: 20px;
+    color: #1A1A1A;
+    position: relative;
+    left: 582px;
+    top: -84px;
+    font-family: math;
+    font-weight: bolder;
+}
+
+#name, #phone, #cars, #message{
+      width: 91%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+    outline: none;
+    font-family: math;
+}
+
+#looking-for{
+  display: none;
+}
+
+.overlap-group-sample{
+  position: relative;
+    width: 1120px;
+    height: 468px;
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin: 50px auto;
+    padding: 40px;
+    border: 4px solid black;
+    top:-530px;
+}
+
+/* CSS CODE FOR CONTACT FORM */
+
+}
+
+/*Large Desktop CSS*/
+@media (min-width: 1200px) {
+  .escape-room {
+  background-color: #040707;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.escape-room .div {
+  background-color: #F8F9FA;
+  overflow: hidden;
+  width: 1440px;
+  height: 6840px;
+  position: relative;
+}
+
+.escape-room .overlap {
+  position: absolute;
+  width: 1443px;
+  height: 783px;
+  top: -296px;
+  left: 324px;
+}
+
+.escape-room .ellipse {
+  position: absolute;
+  width: 780px;
+  height: 780px;
+  top: 0;
+  left: 663px;
+  background-color: #F8F9FA;
+  border-radius: 390px;
+  filter: blur(500px);
+}
+
+.escape-room .step-in-break-out {
+  position: relative;
+  width: 1207px;
+  height: 80px;
+  top: 479px;
+  left: -144px;
+  
+  color: var(--tokens-text);
+  font-size: 52px;
+  letter-spacing: -1px;
+  line-height: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  
+}
+
+.escape-room .text-wrapper {
+  color: #2E2E2E;
+}
+
+.escape-room .span {
+  color: #1F3C88;
+}
+
+.escape-room .an-experience-so {
+  position: absolute;
+  width: 814px;
+  height: 20px;
+  top: 662px;
+  left: 4px;
+  font-family: math;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 19px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.escape-room .p {
+  position: absolute;
+  height: 36px;
+  top: 579px;
+  left: -1px;
+  font-family: math;
+  font-weight: 500;
+  color: #2E2E2E;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.escape-room .main-enable {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 36px;
+  position: absolute;
+  top: 442px;
+  left: 356px;
+  border-radius: 100px;
+  border: 0.6px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  background: linear-gradient(225deg, rgba(255, 174, 0, 1) 0%, rgba(248, 126, 0, 1) 100%);
+}
+
+.escape-room .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.6px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .main-disabled {
+  display: flex;
+  width: 159px;
+  height: 44px;
+  position: absolute;
+  top: 430px;
+  left: 875px;
+  background-color: #27AE60;
+  border: 1px solid;
+  backdrop-filter: blur(10px) brightness(100%);
+  -webkit-backdrop-filter: blur(10px) brightness(100%);
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 36px;
+  border-radius: 100px;
+  border-color: var(--tokens-card-and-button-strokes);
+}
+
+.escape-room .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  margin-left: -11.5px;
+  margin-right: -11.5px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .group {
+  position: absolute;
+  width: 187px;
+  height: 16px;
+  top: 648px;
+  left: 536px;
+}
+
+.escape-room .text-wrapper-4 {
+  position: absolute;
+  height: 15px;
+  top: -154px;
+  left: -126px;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #858787;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 14.6px;
+  white-space: nowrap;
+}
+
+.escape-room .encrypted {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -157px;
+  left: -149px;
+  display: none;
+}
+
+.escape-room .designer {
+  position: absolute;
+  width: 936px;
+  height: 560px;
+  top: 610px;
+  left: 240px;
+  border-radius: 8px;
+  border: 2px solid;
+}
+
+.escape-room .flexcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  position: absolute;
+  width: 850px;
+  height: 180px;
+  top: 1413px;
+  left: 259px;
+}
+
+.escape-room .text {
+  position: relative;
+        align-self: stretch;
+        font-family: math;
+        font-weight: 500;
+        color: transparent;
+        font-size: 44px;
+        letter-spacing: 1.08px;
+        line-height: normal;
+        left: -82px;
+        top: -234px;
+        width: 1110px;
+}
+
+.escape-room .text-wrapper-5 {
+          color: #1F3C88;
+          letter-spacing: 0.39px;
+          position: relative;
+          top: -100px;
+}
+
+.escape-room .text-wrapper-6 {
+  color: #2E2E2E;
+  letter-spacing: 0.39px;
+}
+
+.escape-room .in-our-evolved {
+          position: absolute;
+        height: 52px;
+        top: 1657px;
+        left: 396px;
+        font-family: math;
+        font-weight: 500;
+        color: transparent;
+        font-size: 56px;
+        letter-spacing: 1.08px;
+        line-height: 52px;
+        white-space: nowrap;
+        font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.escape-room .group-2 {
+  position: absolute;
+  width: 1120px;
+  height: 181px;
+  top: 1815px;
+  left: 160px;
+}
+
+.escape-room .group-3 {
+  position: absolute;
+  width: 174px;
+  height: 170px;
+  top: 11px;
+  left: 308px;
+}
+
+.escape-room .puzzle-svgrepo-com {
+  position: absolute;
+  width: 106px;
+  height: 106px;
+  top: 0;
+  left: 33px;
+  background-image: url(./img/group-3.png);
+  background-size: 100% 100%;
+}
+
+.escape-room .text-wrapper-7 {
+  position: absolute;
+  height: 24px;
+  top: 146px;
+  left: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #ffae00;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.escape-room .group-4 {
+  position: absolute;
+  width: 155px;
+  height: 164px;
+  top: 17px;
+  left: 0;
+}
+
+.escape-room .text-wrapper-8 {
+ position: absolute;
+ height: 24px;
+ top: 140px;
+ left: -104px;
+ font-family: math;
+ font-weight: 500;
+ color: #1A1A1A;
+ font-size: 30px;
+ letter-spacing: 0;
+ line-height: 24px;
+ white-space: nowrap;
+}
+
+.escape-room .camera-svgrepo {
+  position: absolute;
+  width: 116px;
+  height: 116px;
+  top: 0;
+  left: 19px;
+}
+
+.escape-room .img {
+position: absolute;
+        width: 130px;
+        height: 130px;
+        top: 0;
+        left: -123px;
+        border-radius: 12px;
+}
+
+.escape-room .group-5 {
+  position: absolute;
+  width: 144px;
+  height: 181px;
+  top: 0;
+  left: 978px;
+}
+
+.escape-room .text-wrapper-9 {
+          position: absolute;
+          height: 24px;
+          top: 157px;
+          left: 33px;
+          font-family: math;
+          font-weight: 500;
+          color: #1A1A1A;
+          font-size: 30px;
+          letter-spacing: 0;
+          line-height: 24px;
+          white-space: nowrap;
+}
+
+.escape-room .detective-face {
+  position: absolute;
+  width: 142px;
+  height: 142px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .group-6 {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        top: 24px;
+        left: 90px;
+        border-radius: 12px;
+}
+
+.escape-room .group-7 {
+  position: absolute;
+  width: 190px;
+  height: 159px;
+  top: 22px;
+  left: 635px;
+}
+
+.escape-room .text-wrapper-10 {
+          position: absolute;
+          height: 24px;
+          top: 135px;
+          left: -125px;
+          font-family: math;
+          font-weight: 500;
+          color: #1A1A1A;
+          font-size: 30px;
+          text-align: center;
+          letter-spacing: 0;
+          line-height: 24px;
+          white-space: nowrap;
+}
+
+.escape-room .image-circle-story {
+ position: absolute;
+        width: 130px;
+        height: 130px;
+        top: 0;
+        left: -124px;
+        border-radius: 12px;
+}
+
+.escape-room .group-8 {
+  position: absolute;
+  width: 1120px;
+  height: 60px;
+  top: 2196px;
+  left: 160px;
+}
+
+.escape-room .frame {
+  position: absolute;
+  width: 352px;
+  height: 60px;
+  top: 0;
+  left: -105px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .img-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 134px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: none;
+}
+
+.escape-room .the-pioneer {
+  position: relative;
+  width: 91.12px;
+  height: 18px;
+  margin-left: -2.56px;
+  margin-right: -2.56px;
+}
+
+.escape-room .text-wrapper-11 {
+ position: absolute;
+ height: 16px;
+ top: 13px;
+ left: 98px;
+ font-family: math;
+ font-weight: 400;
+ color: #28A745;
+ font-size: 24px;
+ letter-spacing: 0;
+ line-height: normal;
+ white-space: nowrap;
+}
+
+.escape-room .text-wrapper-12 {
+          position: absolute;
+          height: 12px;
+          top: 40px;
+          left: 140px;
+          font-family: math;
+          font-weight: 400;
+          color: #1A1A1A;
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+}
+
+.escape-room .frame-2 {
+  position: absolute;
+  width: 352px;
+  height: 60px;
+  top: 0;
+  left: 384px;
+  border-radius: 16px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .the-indian-express {
+  position: relative;
+  width: 114px;
+  height: 11px;
+  margin-left: -14px;
+  margin-right: -14px;
+  object-fit: cover;
+}
+
+.escape-room .frame-3 {
+  position: absolute;
+  width: 352px;
+  height: 60px;
+  top: 0;
+  left: 850px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .zee-business-channel {
+  position: relative;
+  width: 79px;
+  height: 30px;
+}
+
+.escape-room .group-9 {
+  position: absolute;
+  width: 1119px;
+  height: 68px;
+  top: 4066px;
+  left: 160px;
+}
+
+.escape-room .group-10 {
+position: absolute;
+        width: 312px;
+        height: 67px;
+        top: 0;
+        left: 832px;
+}
+
+.escape-room .group-11 {
+  position: absolute;
+  width: 140px;
+  height: 64px;
+  top: 2px;
+  left: 174px;
+}
+
+.escape-room .text-wrapper-13 {
+  position: absolute;
+  height: 36px;
+  top: 0;
+  left: 0;
+  font-family: math;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-14 {
+  position: absolute;
+  height: 20px;
+  top: 44px;
+  left: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #DC3545;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .text-wrapper-15 {
+  position: absolute;
+  width: 150px;
+  top: 0;
+  left: -8px;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 76px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-12 {
+  position: absolute;
+        width: 312px;
+        height: 68px;
+        top: 0;
+        left: 431px;
+
+}
+
+.escape-room .group-13 {
+  position: absolute;
+  width: 246px;
+  height: 64px;
+  top: 2px;
+  left: 140px;
+}
+
+.escape-room .text-wrapper-16 {
+  position: absolute;
+  width: 44px;
+  top: 0;
+  left: 0;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 76px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-wrapper {
+  position: absolute;
+  width: 363px;
+  height: 67px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .group-14 {
+position: relative;
+        width: 365px;
+        height: 67px;
+        left: -108px;
+}
+
+.escape-room .group-15 {
+  position: absolute;
+  width: 198px;
+  height: 64px;
+  top: 2px;
+  left: 169px;
+}
+
+.escape-room .text-wrapper-17 {
+  position: absolute;
+  width: 145px;
+  top: 0;
+  left: 0;
+  font-family: math;
+  font-weight: 500;
+  color: #1F3C88;
+  font-size: 76px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-16 {
+  position: absolute;
+  width: 1122px;
+  height: 428px;
+  top: 4334px;
+  left: 160px;
+}
+
+.escape-room .visit-a-location {
+  position: absolute;
+  height: 36px;
+  top: 0;
+  left: 379px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-sub-headline);
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .frame-4 {
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+  position: absolute;
+  top: 76px;
+  left: 0;
+  display: none;
+}
+
+.escape-room .frame-wrapper {
+  position: relative;
+  width: 352px;
+  height: 352px;
+  border-radius: 24px;
+  background-image: url(./img/frame-804.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .div-wrapper {
+  display: flex;
+  width: 352px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 36px;
+  position: relative;
+  top: 304px;
+  border-radius: 24px;
+  border: 0.5px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  background: linear-gradient(225deg, rgba(255, 174, 0, 1) 0%, rgba(248, 126, 0, 1) 100%);
+  left: -51px;
+}
+
+.escape-room .text-wrapper-18 {
+  position: relative;
+  width: fit-content;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .frame-5 {
+  position: relative;
+  width: 352px;
+  height: 352px;
+  border-radius: 24px;
+  background-image: url(./img/frame-803.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .frame-6 {
+  position: relative;
+  width: 352px;
+  height: 352px;
+  border-radius: 24px;
+  background-image: url(./img/frame-802.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .group-17 {
+  position: absolute;
+  width: 1122px;
+  height: 432px;
+  top: 5897px;
+  left: 160px;
+}
+
+.escape-room .text-wrapper-19 {
+  position: absolute;
+  top: 0;
+  left: 502px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-sub-headline);
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 39.6px;
+  white-space: nowrap;
+}
+
+.escape-room .frame-7 {
+  display: flex;
+  width: 1394px;
+  align-items: center;
+  gap: 141px;
+  position: absolute;
+  top: -500px;
+  left: -106px;
+  overflow: hidden;
+}
+
+.escape-room .frame-8 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./images/internshipblog.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .frame-9 {
+ display: flex;
+        width: 292px;
+        height: 40px;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 16px 24px;
+        position: relative;
+        background-color: var(--tokens-overlay-card);
+        border-radius: 20px;
+        border: 0.5px solid;
+        border-color: var(--tokens-card-and-button-strokes);
+        backdrop-filter: blur(16px) brightness(100%);
+        -webkit-backdrop-filter: blur(16px) brightness(100%);
+}
+
+.escape-room .text-wrapper-20 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 40px;
+  letter-spacing: 0.1px;
+  line-height: 22px;
+  white-space: nowrap;
+  top: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-10 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./images/careeradvice.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .frame-11 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./images/myths.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .text-wrapper-21 {
+  position: relative;
+  width: 290px;
+  margin-top: -0.5px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 39px;
+  letter-spacing: 0.1px;
+  line-height: 22px;
+  top: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-12 {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 352px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  border-radius: 24px;
+  background-image: url(./img/frame-790.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.escape-room .overlap-group-wrapper {
+  position: absolute;
+  width: 1126px;
+  height: 468px;
+  top: 6529px;
+  left: 160px;
+}
+
+.escape-room .overlap-group {
+  position: relative;
+  width: 1120px;
+  height: 468px;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(2px) brightness(100%);
+  -webkit-backdrop-filter: blur(2px) brightness(100%);
+  left: 6px;
+  top: -500px
+}
+
+.escape-room .overlap-2 {
+  position: absolute;
+  width: 1116px;
+  height: 284px;
+  top: 184px;
+  left: 2px;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  border: 1px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  backdrop-filter: blur(2px) brightness(100%);
+  -webkit-backdrop-filter: blur(2px) brightness(100%);
+}
+
+.escape-room .group-18 {
+  position: absolute;
+  width: 418px;
+  height: 30px;
+  top: 69px;
+  left: 63px;
+}
+
+.escape-room .text-wrapper-22 {
+  position: absolute;
+  width: 92px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.escape-room .vector {
+  top: 30px;
+  left: 0;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .group-19 {
+  position: absolute;
+  width: 418px;
+  height: 30px;
+  top: 119px;
+  left: 63px;
+}
+
+.escape-room .text-wrapper-23 {
+  position: absolute;
+  width: 168px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.escape-room .group-20 {
+  position: absolute;
+  width: 416px;
+  height: 44px;
+  top: 169px;
+  left: 63px;
+}
+
+.escape-room .vector-2 {
+  top: 44px;
+  left: 0;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .group-21 {
+  position: absolute;
+  width: 418px;
+  height: 32px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .text-wrapper-24 {
+  position: absolute;
+  height: 20px;
+  top: 12px;
+  left: 0;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .stat-minus-wrapper {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: 384px;
+  background-color: var(--tokens-card);
+  border-radius: 16px;
+  border: 0.5px solid;
+  border-color: var(--tokens-text);
+}
+
+.escape-room .stat-minus {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: 4px;
+}
+
+.escape-room .text-wrapper-25 {
+  position: absolute;
+  width: 117px;
+  height: 18px;
+  top: 69px;
+  left: 639px;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: #858787;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.escape-room .vector-3 {
+  top: 98px;
+  left: 639px;
+  position: absolute;
+  width: 455px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .vector-4 {
+  top: 138px;
+  left: 639px;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .vector-5 {
+  top: 178px;
+  left: 639px;
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.escape-room .main-enable-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  position: absolute;
+  top: 203px;
+  left: 639px;
+}
+
+.escape-room .main-enable-2 {
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+  border: 0.6px solid;
+  background: #27AE60;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 12px;
+  border-radius: 100px;
+  border-color: var(--tokens-card-and-button-strokes);
+  left: 320px;
+  top: 2px;
+}
+
+.escape-room .text-wrapper-26 {
+  position: absolute;
+  top: 46px;
+  left: 64px;
+  font-family: math;
+  font-weight: 700;
+  color: #1A1A1A;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.escape-room .group-22 {
+  position: absolute;
+  width: 444px;
+  height: 44px;
+  top: 104px;
+  left: 640px;
+}
+
+.escape-room .component {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 398px;
+  background-image: url(./img/component-13.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .text-wrapper-27 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.escape-room .group-23 {
+  position: absolute;
+  width: 112px;
+  height: 44px;
+  top: 104px;
+  left: 368px;
+}
+
+.escape-room .component-2 {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 68px;
+  background-image: url(./img/component-12.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .component-3 {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/component-14.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .text-wrapper-28 {
+  position: absolute;
+  top: 114px;
+  left: 64px;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.escape-room .group-24 {
+  position: absolute;
+  width: 1440px;
+  height: 140px;
+  top: 7197px;
+  left: 0;
+}
+
+.escape-room .group-25 {
+  height: 140px;
+  background-color: var(--tokens-header);
+}
+
+.escape-room .frame-13 {
+  display: flex;
+  width: 1440px;
+  align-items: center;
+  justify-content: center;
+  gap: 162px;
+  padding: 40px 160px;
+  position: relative;
+  background-color: #2C3E50;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  top: -498px;
+}
+
+.escape-room .image {
+          position: relative;
+        width: 271px;
+        height: 100px;
+        top: -15px;
+        left: -262px;
+}
+
+.escape-room .group-26 {
+  position: relative;
+  width: 141.32px;
+  height: 26.08px;
+}
+
+.escape-room .vector-6 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -46px;
+  left: -340px;
+}
+
+.escape-room .group-27 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -46px;
+  left: -100px;
+}
+
+.escape-room .group-28 {
+  position: absolute;
+  width: 80px;
+        height: 80px;
+        top: -46px;
+  left: 125px;
+}
+
+.escape-room .group-29 {
+  position: relative;
+  width: 382px;
+  height: 20px;
+  margin-right: -0.16px;
+}
+
+.escape-room .text-wrapper-29 {
+  position: absolute;
+  height: 20px;
+  top: 0;
+  left: -40px;
+  font-family: "Sharp Grotesk-Medium20", Helvetica;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .group-30 {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .group-31 {
+  position: relative;
+  width: 17px;
+  height: 15px;
+  top: 2px;
+  left: 2px;
+}
+
+.escape-room .overlap-group-2 {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  border: 1.35px solid;
+  border-color: var(--tokens-text);
+  left: 317px;
+        top: 24px;
+}
+
+.escape-room .text-wrapper-30 {
+  position: absolute;
+  width: 8px;
+  height: 9px;
+  top: 2px;
+  left: 2px;
+  font-family: "Arial-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 9.8px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.escape-room .group-32 {
+  position: absolute;
+  width: 1122px;
+  height: 735px;
+  top: 4962px;
+  left: 160px;
+}
+
+.escape-room .peek-into-an {
+ position: absolute;
+        top: -670px;
+        left: 54px;
+        font-family: math;
+        font-weight: 500;
+        color: var(--tokens-sub-headline);
+        font-size: 56px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 39.6px;
+        white-space: nowrap;
+        font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.escape-room .group-33 {
+ position: absolute;
+        width: 1128px;
+        height: 655px;
+        top: -408px;
+        left: -19px;
+}
+
+.escape-room .overlap-group-3 {
+  position: absolute;
+  width: 544px;
+  height: 300px;
+  top: 355px;
+  left: -83px;
+  background-image: url(./images/showcaseport.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+}
+
+.escape-room .rectangle {
+position: absolute;
+        width: 544px;
+        height: 80px;
+        top: 220px;
+        left: -1px;
+        background-color: var(--tokens-overlay-card);
+        border-radius: 18px;
+        border: 1px solid;
+        border-color: var(--tokens-card-and-button-strokes);
+        backdrop-filter: blur(16px) brightness(100%);
+        -webkit-backdrop-filter: blur(16px) brightness(100%);
+}
+
+.escape-room .text-wrapper-31 {
+  position: absolute;
+  height: 33px;
+  top: 244px;
+  left: 53px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .overlap-3 {
+  position: absolute;
+  width: 544px;
+  height: 300px;
+  top: 0;
+  left: -85px;
+  background-image: url(./images/mentorjourney.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+}
+
+.escape-room .text-wrapper-32 {
+  position: absolute;
+  height: 33px;
+  top: 244px;
+  left: 35px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 39px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .overlap-4 {
+  position: absolute;
+  width: 544px;
+  height: 300px;
+  top: 0;
+  left: 678px;
+  background-image: url(./images/testimonials.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+}
+
+.escape-room .text-wrapper-33 {
+  position: absolute;
+  height: 33px;
+  top: 243px;
+  left: 33px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .overlap-5 {
+  position: absolute;
+  width: 544px;
+  height: 300px;
+  top: 355px;
+  left: 678px;
+  background-image: url(./images/outcomereview.png);
+  background-size: 100% 100%;
+  border-radius: 16px;
+}
+
+.overlap-5:hover{
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 55, 255, 0.5);
+}
+
+.escape-room .text-wrapper-34 {
+  position: absolute;
+  height: 33px;
+  top: 244px;
+  left: 33px;
+  font-family: math;
+  color: var(--tokens-text);
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .group-34 {
+  position: absolute;
+  width: 1120px;
+  height: 1330px;
+  top: 2536px;
+  left: 55px;
+}
+
+.escape-room .frame-14 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 54px;
+  position: absolute;
+  top: 470px;
+  left: 0;
+}
+
+.escape-room .frame-15 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 43px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .img-2 {
+   position: relative;
+        width: 360px;
+        height: 309px;
+        border-radius: 16px;
+        border: 2px solid;
+        left: -4px;
+
+}
+
+.escape-room .text-wrapper-35 {
+         position: relative;
+         width: fit-content;
+         font-family: math;
+         font-weight: 500;
+         color: #1F3C88;
+         font-size: 30px;
+         text-align: center;
+         letter-spacing: 0;
+         line-height: 26.4px;
+         white-space: nowrap;
+         left: 32px;
+         font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-16 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+  display: none;
+}
+
+.escape-room .frame-17 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.escape-room .text-wrapper-36 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text-headline);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 17.6px;
+  white-space: nowrap;
+}
+
+.escape-room .text-wrapper-37 {
+  margin-top: -1px;
+  text-align: center;
+  position: relative;
+  width: fit-content;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 17.6px;
+  white-space: nowrap;
+}
+
+.escape-room .img-3 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.escape-room .text-wrapper-38 {
+  position: relative;
+  width: fit-content;
+  font-family: "Sharp Grotesk-Book20", Helvetica;
+  font-weight: 400;
+  color: var(--tokens-text);
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 17.6px;
+  white-space: nowrap;
+}
+
+.escape-room .frame-18 {
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.escape-room .confirmation-number-wrapper {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border: 0.5px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  display: none;
+}
+
+.escape-room .confirmation-number {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 6px;
+  left: 6px;
+}
+
+.escape-room .frame-19 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 50px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .frame-20 {
+  align-items: flex-end;
+  gap: 20px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+  display: none;
+}
+
+.escape-room .frame-21 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 54px;
+  position: absolute;
+  top: 940px;
+  left: 0;
+}
+
+.escape-room .frame-22 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: flex-end;
+  gap: 12px 50px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .frame-23 {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.escape-room .frame-24 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: flex-end;
+  gap: 12px 21px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .text-wrapper-39 {
+        position: relative;
+        width: fit-content;
+        font-family: math;
+        font-weight: 500;
+        color: #1F3C88;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 26.4px;
+        white-space: nowrap;
+        left: 32px;
+        font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .frame-25 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 22px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .frame-26 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 54px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.escape-room .frame-27 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 45px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .frame-28 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 352px;
+  align-items: center;
+  gap: 12px 49px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--tokens-card);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .escape-rooms {
+  position: absolute;
+  top: 2317px;
+  left: 528px;
+  font-family: math;
+  font-weight: 500;
+  color: var(--tokens-text);
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 39.6px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.escape-room .rectangle-2 {
+          position: fixed;
+        width: 1440px;
+        height: 98px;
+        top: 0;
+        left: 0;
+        background-color: #2C3E50;
+}
+
+.escape-room .image-2 {
+          position: fixed;
+        width: 250px;
+        height: 90px;
+        top: 4px;
+        left: 63px;
+}
+
+.escape-room .navbar {
+  position: fixed;
+  width: 461px;
+  height: 20px;
+  top: 38px;
+  left: 350px;
+  
+}
+
+.escape-room .text-wrapper-40 {
+  left: 6px;
+  position: absolute;
+  height: 20px;
+  top: 0px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-41 {
+  position: absolute;
+  height: 20px;
+  top: 0px;
+  left: 278px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-42 {
+  left: 624px;
+  position: absolute;
+  height: 20px;
+  top: 0px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.escape-room .text-wrapper-43 {
+  left: 368px;
+  position: absolute;
+  height: 20px;
+  top: 30px;
+  font-family: math;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 19.5px;
+  white-space: nowrap;
+  display: none;
+}
+
+.escape-room .component-4 {
+  position: fixed;
+  width: 180px;
+  height: 44px;
+  top: 26px;
+  left: 1100px;
+}
+
+.escape-room .menu-wrapper {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  left: 136px;
+  background-color: var(--tokens-secondary-button);
+  border-radius: 22px;
+  border: 0.5px solid;
+  border-color: var(--tokens-card-and-button-strokes);
+  backdrop-filter: blur(14px) brightness(100%);
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+}
+
+.escape-room .menu {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  left: 10px;
+}
+
+.escape-room .component-5 {
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  top: 26px;
+  left: 919px;
+  background-image: url(./img/component-24.svg);
+  background-size: 100% 100%;
+}
+
+.escape-room .main-enable-3 {
+  display: inline-flex;
+  align-items: flex-start;
+  position: fixed;
+  top: 26px;
+  left: 987px;
+}
+
+.escape-room .component-6 {
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  top: 26px;
+  left: 1166px;
+  background-image: url(./img/component-14-2.svg);
+  background-size: 100% 100%;
+}
+
+
+/* CSS CODE FOR CONTACT FORM */
+.escape-room-sample{
+  background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        top: 6489px;
+        height: 2px;
+}
+
+.form-group{
+  font-size: 20px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bolder;
+    font-family: math;
+    color: black;
+}
+
+.contact-info{
+      margin-top: 30px;
+    font-size: 20px;
+    color: #1A1A1A;
+    position: relative;
+    left: 786px;
+    top: -84px;
+    font-family: math;
+    font-weight: bolder;
+}
+
+#name, #phone, #cars, #message{
+      width: 91%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+    outline: none;
+    font-family: math;
+}
+
+#looking-for{
+  display: none;
+}
+
+.overlap-group-sample{
+  position: relative;
+    width: 1120px;
+    height: 468px;
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin: 50px auto;
+    padding: 40px;
+    border: 4px solid black;
+    top:-530px;
+}
+
+/* CSS CODE FOR CONTACT FORM */
+
+}
