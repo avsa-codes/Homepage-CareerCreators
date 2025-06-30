@@ -1,3 +1,4 @@
+
 html {
   scroll-behavior: smooth;
 }
@@ -4007,8 +4008,8 @@ display: flex;
   position: fixed;
   width: 250px;
   height: 100px;
-  top: 31px;
-  left: 48px;
+  top: 22px;
+  left: 14px;
 }
 
 .escape-room .navbar {
@@ -6017,8 +6018,8 @@ position: relative;
   position: fixed;
   width: 250px;
   height: 100px;
-  top: 31px;
-  left: 48px;
+  top: 22px;
+  left: 14px;
 }
 
 .escape-room .navbar {
@@ -8030,8 +8031,11 @@ position: absolute;
         width: 250px;
         height: 90px;
         top: 4px;
-        left: 63px;
+        left: 14px;
+        
 }
+
+
 
 .escape-room .navbar {
   position: fixed;
@@ -8079,7 +8083,7 @@ position: absolute;
 }
 
 .escape-room .text-wrapper-42 {
-  left: 624px;
+  left: 580px;
   position: absolute;
   height: 20px;
   top: 0px;
