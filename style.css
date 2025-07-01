@@ -1,3 +1,36 @@
+/* CSS CODE FOR BLOGS POPUP*/
+/* Popup Styling */
+.popup {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: -80px; /* Adjust to position the popup above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show popup on hover */
+.frame:hover .popup,
+.frame-2:hover .popup,
+.frame-3:hover .popup {
+  display: block;
+  opacity: 1; /* Make popup visible on hover */
+}
+
+/*ENDS*/
+
+
+
 
 html {
   scroll-behavior: smooth;

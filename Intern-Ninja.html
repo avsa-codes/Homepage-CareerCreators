@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intern Ninja - Transforming Talent into Opportunity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6a11cb;
+      --secondary: #2575fc;
+      --background: #f4f6ff;
+      --card-bg: #ffffff;
+      --text-dark: #1f2937;
+      --text-light: #6b7280;
+      --accent: #10b981;
+      --border: #c3dafe;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--background);
+      color: var(--text-dark);
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      border-radius: 12px;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin: 3rem 0;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p.centered {
+      text-align: center;
+      color: var(--text-light);
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+      gap: 2rem;
+      justify-content: center;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #ffffff, #f0f4ff);
+      border: 2px solid var(--border);
+      padding: 2rem;
+      border-radius: 1.25rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .card h3 {
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: 0.8rem;
+    }
+
+    .card p {
+      color: #374151;
+      font-size: 1.05rem;
+      line-height: 1.65;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .step {
+      background: white;
+      padding: 1rem 1.5rem;
+      border-left: 6px solid var(--accent);
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    .step h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    form {
+      background: white;
+      padding: 2rem;
+      max-width: 600px;
+      margin: 3rem auto;
+      border-radius: 1rem;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+      width: calc(100% - 2rem);
+    }
+
+    form h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    form .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    form label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+    }
+
+    form input,
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 0.6rem;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: var(--primary);
+      color: white;
+      padding: 0.9rem;
+      border: none;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 1.05rem;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #4c00b0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Intern Ninja</h1>
+    <p>Transforming Talent into Opportunity – We help students land real internships by doing the work for them.</p>
+  </header>
+
+  <section>
+    <h2>Our Core Services</h2>
+    <p class="centered">We go beyond just internship applications – we provide career-boosting services tailored to your goals.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Internship & Job Placement</h3>
+        <p>We don’t just guide – we apply on your behalf, making sure you land high-quality internships that align with your goals.</p>
+      </div>
+      <div class="card">
+        <h3>Resume Optimization</h3>
+        <p>ATS-proof, recruiter-friendly resumes that highlight your strengths and achievements the right way.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Building</h3>
+        <p>Whether you're a designer, coder, or content writer – we help you craft compelling portfolios that convert interest into interviews.</p>
+      </div>
+      <div class="card">
+        <h3>LinkedIn Enhancement</h3>
+        <p>We transform your LinkedIn profile into a personal brand that attracts recruiters, not just followers.</p>
+      </div>
+      <div class="card">
+        <h3>Interview Coaching</h3>
+        <p>Mock sessions + expert feedback = confident interviews. We train you for HR and technical rounds.</p>
+      </div>
+      <div class="card">
+        <h3>Skill Workshops</h3>
+        <p>From soft skills to time management, we organize bite-sized, high-impact workshops to build job-ready confidence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How Intern Ninja Works</h2>
+    <p class="centered">You chill. We chase. Here’s how it flows:</p>
+    <div class="steps">
+      <div class="step">
+        <h4>1. Share Your Details</h4>
+        <p>We understand who you are, what you're looking for, and how you’d like us to support you.</p>
+      </div>
+      <div class="step">
+        <h4>2. Profile Review</h4>
+        <p>Our experts suggest upgrades to your resume and online presence, if needed.</p>
+      </div>
+      <div class="step">
+        <h4>3. Daily Applications</h4>
+        <p>We apply every day on your behalf. Yes – literally every day.</p>
+      </div>
+      <div class="step">
+        <h4>4. Interview Alerts</h4>
+        <p>You get notified when companies want to connect – we help you prep too!</p>
+      </div>
+      <div class="step">
+        <h4>5. Mentorship & Support</h4>
+        <p>Want extra help with interviews or planning your next move? We’re here.</p>
+      </div>
+      <div class="step">
+        <h4>6. You Get Placed</h4>
+        <p>You celebrate. We celebrate. And we’re still just a text away if you need us.</p>
+      </div>
+    </div>
+  </section>
+
+  <form action="https://formsubmit.co/careercreatorshub@gmail.com" method="POST">
+    <h2>Get Started with Intern Ninja</h2>
+    <input type="hidden" name="_next" value="https://careercreators.online/thanks.html">
+    <input type="hidden" name="_captcha" value="false">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="service">What are you looking for?</label>
+      <select id="service" name="What service are you looking for ?" required>
+        <option value="Intern Ninja">Intern Ninja</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit">Book Now</button>
+  </form>
+
+  <footer>
+    &copy; 2025 Career Creators | Intern Ninja
+  </footer>
+
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/918296193469" target="_blank"
+     style="position: fixed; bottom: 20px; left: 20px;
+            background-color: #25d366; color: white;
+            border-radius: 40px; padding: 12px 18px;
+            text-decoration: none; font-weight: 600;
+            z-index: 9999; display: flex; align-items: center;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;"
+     id="whatsapp-btn">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+         alt="WhatsApp" id="whatsapp-icon"
+         style="width: 28px; height: 28px; margin-right: 10px;">
+    <span class="whatsapp-text">Chat with us</span>
+  </a>
+
+  <style>
+    @media (max-width: 768px) {
+      #whatsapp-btn {
+        padding: 16px 22px;
+        font-size: 18px;
+        bottom: 20px;
+        left: 20px;
+        right: auto;
+        border-radius: 50px;
+      }
+
+      #whatsapp-icon {
+        width: 36px !important;
+        height: 36px !important;
+        margin-right: 10px;
+      }
+
+      .whatsapp-text {
+        font-size: 18px;
+      }
+    }
+  </style>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6862ce2593bfc5190ef8428f/1iv0vahag';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>
