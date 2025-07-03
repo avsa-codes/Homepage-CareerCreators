@@ -14,102 +14,145 @@
       font-family: 'Poppins', sans-serif;
       background: #f6f9fc;
       color: #333;
+      scroll-behavior: smooth;
     }
+
     header {
-      background: #0f172a;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
       color: white;
-      padding: 2rem;
+      padding: 3rem 2rem;
       text-align: center;
     }
+
     header h1 {
       font-size: 2.5rem;
-      margin: 0.5rem 0;
+      margin-bottom: 0.5rem;
     }
+
     header p {
       font-size: 1.1rem;
     }
+
     .container {
-      max-width: 800px;
+      max-width: 820px;
       margin: 3rem auto;
-      padding: 2rem;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      padding: 2.5rem;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
     }
+
     h2 {
       text-align: center;
       margin-bottom: 1.2rem;
       color: #0f172a;
     }
+
     .subtext {
       text-align: center;
       margin-bottom: 2rem;
       font-size: 1rem;
       color: #444;
     }
+
     .offer ul {
-      padding-left: 1rem;
+      padding-left: 1.2rem;
     }
+
     .offer ul li {
-      margin: 0.6rem 0;
+      margin: 0.8rem 0;
+      font-size: 1.05rem;
       line-height: 1.6;
+      transition: transform 0.3s ease;
     }
+
+    .offer ul li:hover {
+      transform: translateX(5px);
+      color: #2563eb;
+    }
+
     form {
       display: flex;
       flex-direction: column;
+      margin-top: 2rem;
     }
+
     .form-group {
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.5rem;
     }
+
     label {
       font-weight: 600;
       margin-bottom: 0.4rem;
       display: block;
+      color: #0f172a;
     }
+
     input, select, textarea {
       width: 100%;
-      padding: 0.75rem;
+      padding: 0.8rem;
       border: 1px solid #ccc;
-      border-radius: 6px;
+      border-radius: 8px;
       font-size: 1rem;
+      transition: all 0.3s ease;
+      background: #fefefe;
     }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 8px rgba(37, 99, 235, 0.2);
+      outline: none;
+    }
+
     button[type="submit"] {
-      padding: 0.9rem;
-      background-color: #2563eb;
+      padding: 1rem;
+      background: #2563eb;
       color: white;
       font-size: 1rem;
+      font-weight: 600;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: all 0.3s ease;
     }
+
     button[type="submit"]:hover {
       background-color: #1e40af;
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
+
     .cta-button {
       text-align: center;
-      margin-top: 2rem;
+      margin-top: 2.5rem;
     }
+
     .cta-button a {
       display: inline-block;
-      padding: 0.9rem 1.5rem;
-      background-color: #10b981;
+      padding: 1rem 2rem;
+      background: linear-gradient(to right, #10b981, #059669);
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 12px;
       font-weight: 600;
-      transition: background 0.3s ease;
+      font-size: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .cta-button a:hover {
-      background-color: #059669;
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
     }
+
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
       }
+
       .container {
         margin: 1rem;
-        padding: 1rem;
+        padding: 1.5rem;
       }
     }
   </style>
@@ -117,7 +160,7 @@
 <body>
 
   <header data-aos="fade-down">
-    <h1>🎯 Special Offer for Final Year Students & Freshers</h1>
+    <h1>Special Offer for Final Year Students & Freshers</h1>
     <p>Claim your <strong>FREE Mock Interview</strong> + <strong>30% Off</strong> all services using code <b>CREATOR30</b></p>
   </header>
 
@@ -130,14 +173,13 @@
 
     <div class="offer">
       <ul>
-        <li>✅ ATS-Optimized Resume</li>
-        <li>✅ Portfolio Website</li>
-        <li>✅ LinkedIn Optimization</li>
-        <li>✅ <strong>Intern Ninja</strong>: We apply to internships for you</li>
-        <li>✅ <strong>Free Mock Interviews</strong> for first 20 students</li>
-        <li>✅ Upskilling Courses to build job-ready skills</li>
-        <li>✅ <strong>Job Offers for Freshers</strong></li>
-        <li>🎁 Use code <strong>CREATOR30</strong> for 30% Off</li>
+        <li>ATS-Optimized Resume</li>
+        <li>Portfolio Website</li>
+        <li>LinkedIn Optimization</li>
+        <li>Intern Ninja: We apply to internships for you</li>
+        <li>Free Mock Interviews for first 20 students</li>
+        <li>Upskilling Courses to build job-ready skills</li>
+        <li>Job Offers for Freshers</li>
       </ul>
     </div>
 
@@ -172,7 +214,7 @@
     </form>
 
     <div class="cta-button" data-aos="zoom-in">
-      <a href="https://careercreators.online">Explore All Services & Job Offers</a>
+      <a href="https://careercreators.online">Explore All Services & Internship Offers</a>
     </div>
   </div>
 
@@ -184,30 +226,22 @@
     });
   </script>
 
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/918296193469" target="_blank"
+    style="position: fixed; bottom: 20px; left: 20px;
+           background-color: #25d366; color: white;
+           border-radius: 40px; padding: 12px 18px;
+           text-decoration: none; font-weight: 600;
+           z-index: 9999; display: flex; align-items: center;
+           font-size: 16px;
+           box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+           transition: all 0.3s ease;">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+      alt="WhatsApp" style="width: 28px; height: 28px; margin-right: 10px;">
+    Chat with us
+  </a>
 
-
-
-
-<a href="https://wa.me/918296193469" target="_blank"
-style="position: fixed; bottom: 20px; left: 20px;
-       background-color: #25d366; color: white;
-       border-radius: 40px; padding: 12px 18px;
-       text-decoration: none; font-weight: 600;
-       z-index: 9999; display: flex; align-items: center;
-       font-size: 16px;
-       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-       transition: all 0.3s ease;"
-id="whatsapp-btn">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-    alt="WhatsApp" id="whatsapp-icon"
-    style="width: 28px; height: 28px; margin-right: 10px;">
-<span class="whatsapp-text">Chat with us</span>
-</a>
-
-
-
-
-  <!--Start of Tawk.to Script-->
+  <!-- Tawk.to Live Chat -->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     (function () {
@@ -219,6 +253,6 @@ id="whatsapp-btn">
       s0.parentNode.insertBefore(s1, s0);
     })();
   </script>
-  <!--End of Tawk.to Script-->
+
 </body>
 </html>
