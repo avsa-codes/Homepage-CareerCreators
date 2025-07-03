@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Creators | Email Offer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f6f9fc;
+      color: #333;
+    }
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1.2rem;
+      color: #0f172a;
+    }
+    .subtext {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      color: #444;
+    }
+    .offer ul {
+      padding-left: 1rem;
+    }
+    .offer ul li {
+      margin: 0.6rem 0;
+      line-height: 1.6;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+    label {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button[type="submit"] {
+      padding: 0.9rem;
+      background-color: #2563eb;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button[type="submit"]:hover {
+      background-color: #1e40af;
+    }
+    .cta-button {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .cta-button a {
+      display: inline-block;
+      padding: 0.9rem 1.5rem;
+      background-color: #10b981;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .cta-button a:hover {
+      background-color: #059669;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <h1>🎯 Special Offer for Final Year Students & Freshers</h1>
+    <p>Claim your <strong>FREE Mock Interview</strong> + <strong>30% Off</strong> all services using code <b>CREATOR30</b></p>
+  </header>
+
+  <div class="container" data-aos="fade-up">
+    <h2>This Week’s Exclusive Career Boost Bundle</h2>
+    <p class="subtext">
+      Explore all our services including Resume Building, LinkedIn Optimization, Portfolio Website, Intern Ninja, and Job Openings.  
+      Use <strong>CREATOR30</strong> for 30% off + Free Mock Interview for the first 20 students!
+    </p>
+
+    <div class="offer">
+      <ul>
+        <li>✅ ATS-Optimized Resume</li>
+        <li>✅ Portfolio Website</li>
+        <li>✅ LinkedIn Optimization</li>
+        <li>✅ <strong>Intern Ninja</strong>: We apply to internships for you</li>
+        <li>✅ <strong>Free Mock Interviews</strong> for first 20 students</li>
+        <li>✅ Upskilling Courses to build job-ready skills</li>
+        <li>✅ <strong>Job Offers for Freshers</strong></li>
+        <li>🎁 Use code <strong>CREATOR30</strong> for 30% Off</li>
+      </ul>
+    </div>
+
+    <form action="https://formsubmit.co/careercreatorshub@gmail.com" method="POST">
+      <h2>Claim Your Career Boost Offer</h2>
+      <input type="hidden" name="_next" value="https://careercreators.online/thanks.html">
+      <input type="hidden" name="_captcha" value="false">
+      
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="service">Referral Code</label>
+        <select id="service" name="What service are you looking for ?" required>
+          <option value="Referral">CREATOR30</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+
+      <button type="submit">Claim Offer</button>
+    </form>
+
+    <div class="cta-button" data-aos="zoom-in">
+      <a href="https://careercreators.online">Explore All Services & Job Offers</a>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+
+
+
+
+<a href="https://wa.me/918296193469" target="_blank"
+style="position: fixed; bottom: 20px; left: 20px;
+       background-color: #25d366; color: white;
+       border-radius: 40px; padding: 12px 18px;
+       text-decoration: none; font-weight: 600;
+       z-index: 9999; display: flex; align-items: center;
+       font-size: 16px;
+       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+       transition: all 0.3s ease;"
+id="whatsapp-btn">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+    alt="WhatsApp" id="whatsapp-icon"
+    style="width: 28px; height: 28px; margin-right: 10px;">
+<span class="whatsapp-text">Chat with us</span>
+</a>
+
+
+
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6862ce2593bfc5190ef8428f/1iv0vahag';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+</html>
