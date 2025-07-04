@@ -215,7 +215,7 @@
 
     <form action="https://formspree.io/f/mjkrznwy" method="POST">
       <h2>Claim Your Career Boost Offer</h2>
-      <input type="hidden" name="_next" value="https://careercreators.online/thanks.html">
+      <!--<input type="hidden" name="_next" value="https://careercreators.online/thanks.html">-->
       <input type="hidden" name="_captcha" value="false">
       
       <div class="form-group">
@@ -285,21 +285,26 @@
   </script>
 
 <script>
-  const form = document.getElementById("offerForm");
-  form.addEventListener("submit", function(e) {
+  document.getElementById("offerForm").addEventListener("submit", function(e) {
     e.preventDefault();
+
+    const form = e.target;
     const data = new FormData(form);
+
     fetch(form.action, {
       method: "POST",
       body: data,
-      headers: { 'Accept': 'application/json' }
+      headers: { "Accept": "application/json" }
     }).then(response => {
       if (response.ok) {
+        // Redirect manually
         window.location.href = "https://careercreators.online/thanks.html";
       } else {
         alert("Something went wrong. Please try again.");
       }
-    }).catch(() => alert("Submission failed. Please try again."));
+    }).catch(() => {
+      alert("Error submitting form. Please try again.");
+    });
   });
 </script>
 
