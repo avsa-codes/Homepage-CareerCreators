@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intern Ninja - Transforming Talent into Opportunity</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     :root {
       --primary: #6a11cb;
@@ -28,6 +31,7 @@
     body {
       background: var(--background);
       color: var(--text-dark);
+      scroll-behavior: smooth;
     }
 
     header {
@@ -37,6 +41,18 @@
       color: white;
       border-radius: 12px;
       margin-bottom: 3rem;
+      animation: fadeInDown 1.2s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     header h1 {
@@ -171,11 +187,12 @@
       cursor: pointer;
       width: 100%;
       margin-top: 1rem;
-      transition: background 0.3s ease;
+      transition: background 0.3s ease, transform 0.2s;
     }
 
     form button:hover {
       background: #4c00b0;
+      transform: scale(1.02);
     }
 
     footer {
@@ -190,13 +207,32 @@
       .cards {
         grid-template-columns: 1fr;
       }
+
+      #whatsapp-btn {
+        padding: 16px 22px;
+        font-size: 18px;
+        bottom: 20px;
+        left: 20px;
+        right: auto;
+        border-radius: 50px;
+      }
+
+      #whatsapp-icon {
+        width: 36px !important;
+        height: 36px !important;
+        margin-right: 10px;
+      }
+
+      .whatsapp-text {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Intern Ninja</h1>
+    <h1>INTERN NINJA</h1>
     <p>Transforming Talent into Opportunity – We help students land real internships by doing the work for them.</p>
   </header>
 
@@ -344,6 +380,16 @@
     })();
   </script>
   <!--End of Tawk.to Script-->
+
+  <!-- AOS Animations -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
 </body>
 
 </html>
