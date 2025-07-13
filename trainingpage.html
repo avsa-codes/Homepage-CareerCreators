@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Creators Training Program</title>
+  <meta name="description" content="Build real-world skills with Career Creators. Join our interactive training program and get guaranteed internships." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4ff;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      padding: 4rem 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .cta-section {
+      background-color: #eef2ff;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section button,
+    .cta-section a {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      background: #6a11cb;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0.5rem;
+    }
+
+    .cta-section button:hover,
+    .cta-section a:hover {
+      background: #4c00b0;
+    }
+
+    .program-section {
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .program-box {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .program-box h3 {
+      color: #6a11cb;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .program-box ul {
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .program-box ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .accordion {
+      background-color: #fff;
+      color: #333;
+      cursor: pointer;
+      padding: 1rem;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .active, .accordion:hover {
+      background-color: #f0f0ff;
+    }
+
+    .panel {
+      padding: 0 1rem;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+      background: #f3f4f6;
+    }
+  </style>
+</head>
+
+<body>
+  <header data-aos="zoom-in">
+    <h1>Career Launch Training Program</h1>
+    <p>Learn top skills in sales, marketing, and communication — and get placed in a real internship after training.</p>
+  </header>
+
+  <section class="cta-section" data-aos="fade-up">
+    <h2>🚀 Ready to start your journey?</h2>
+    <button onclick="document.getElementById('apply-section').scrollIntoView({ behavior: 'smooth' });">
+      Apply for Training + Internship
+    </button>
+    <a href="/hiring.html">View Current Internship Openings</a>
+  </section>
+
+  <section class="program-section">
+    <div class="program-box" data-aos="fade-up">
+      <h3>📚 What You’ll Learn</h3>
+      <ul>
+        <li>Sales scripts, lead generation, follow-up techniques</li>
+        <li>Social media marketing & content writing basics</li>
+        <li>How to communicate like a pro with clients and leads</li>
+        <li>Using Notion, Canva, WhatsApp Business & LinkedIn</li>
+      </ul>
+    </div>
+
+    <div class="program-box" data-aos="fade-up" data-aos-delay="100">
+      <h3>💼 Internship Guarantee</h3>
+      <ul>
+        <li>All trainees are placed in real internships with us or our partners</li>
+        <li>Internships are remote and flexible</li>
+        <li>Certificates + performance-based letters of recommendation</li>
+      </ul>
+    </div>
+
+    <div class="program-box" data-aos="fade-up" data-aos-delay="200">
+      <h3>💸 Program Fee</h3>
+      <ul>
+        <li>Affordable pricing: ₹699 only</li>
+        <li>Includes training, internship, and certifications</li>
+        <li>100% refund if internship not provided within 7 days of training</li>
+      </ul>
+    </div>
+
+    <div class="program-box" data-aos="fade-up" data-aos-delay="300">
+      <h3>❓ Frequently Asked Questions</h3>
+      <button class="accordion">Who is this program for?</button>
+      <div class="panel">
+        <p>Anyone looking to learn practical skills and gain real experience, especially students in college.</p>
+      </div>
+      <button class="accordion">Will I get a certificate?</button>
+      <div class="panel">
+        <p>Yes. You’ll get a certificate for both training and internship after successful completion.</p>
+      </div>
+      <button class="accordion">Is the internship paid?</button>
+      <div class="panel">
+        <p>Some internships include performance-based incentives. But our main goal is to get you work experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="apply-section" class="cta-section" data-aos="fade-up">
+    <h2>🎯 Apply Now</h2>
+    <p>Fill the form to join the next batch</p>
+    <form action="https://formsubmit.co/careercreatorshub@gmail.com" method="POST" style="max-width:600px;margin:2rem auto;">
+      <input type="text" name="name" placeholder="Full Name" required style="width:100%;padding:0.8rem;margin:0.5rem 0;border-radius:6px;border:1px solid #ccc;">
+      <input type="email" name="email" placeholder="Email" required style="width:100%;padding:0.8rem;margin:0.5rem 0;border-radius:6px;border:1px solid #ccc;">
+      <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%;padding:0.8rem;margin:0.5rem 0;border-radius:6px;border:1px solid #ccc;">
+      <textarea name="reason" rows="3" placeholder="Why do you want to join?" style="width:100%;padding:0.8rem;margin:0.5rem 0;border-radius:6px;border:1px solid #ccc;"></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://careercreators.online/thanks.html">
+      <button type="submit" style="background:#6a11cb;color:white;padding:1rem 2rem;border:none;border-radius:30px;font-weight:600;font-size:1rem;cursor:pointer;margin-top:1rem;width:100%;">Submit Application</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Career Creators | All rights reserved
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      });
+    }
+  </script>
+</body>
+
+</html>

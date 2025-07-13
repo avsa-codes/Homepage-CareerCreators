@@ -5,6 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intern Ninja - Transforming Talent into Opportunity</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Intern Ninja helps students land real internships by doing the work for them — resume optimization, LinkedIn revamp, interview prep, and more.">
+  <meta name="keywords" content="internships, resume optimization, LinkedIn help, career creators, intern ninja, student jobs, job placement, interview coaching">
+  <meta name="author" content="Career Creators">
+  <meta property="og:title" content="Intern Ninja - Transforming Talent into Opportunity">
+  <meta property="og:description" content="We help students land real internships by doing the work for them — from resume optimization to daily applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://careercreators.online/logo.png">
+  <meta property="og:url" content="https://careercreators.online/internninja.html">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="https://careercreators.online/favicon.ico" type="image/x-icon">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,6 +91,12 @@
       margin-bottom: 1rem;
     }
 
+    h2:hover {
+      color: var(--accent);
+      transition: color 0.3s ease;
+      cursor: default;
+    }
+
     p.centered {
       text-align: center;
       color: var(--text-light);
@@ -140,16 +160,17 @@
       font-size: 1.2rem;
     }
 
-    form {
-      background: white;
-      padding: 2rem;
-      max-width: 600px;
-      margin: 3rem auto;
-      border-radius: 1rem;
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-      border: 1px solid #ddd;
-      width: calc(100% - 2rem);
-    }
+form {
+  background: white;
+  padding: 2rem 3rem;
+  max-width: 900px;
+  margin: 3rem auto;
+  border-radius: 1rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  width: 95%;
+}
+
 
     form h2 {
       text-align: center;
@@ -176,6 +197,15 @@
       font-size: 1rem;
     }
 
+    form input:focus,
+    form select:focus,
+    form textarea:focus {
+      outline: none;
+      border: 1px solid var(--accent);
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.3);
+      transition: box-shadow 0.3s ease;
+    }
+
     form button {
       background: var(--primary);
       color: white;
@@ -192,7 +222,22 @@
 
     form button:hover {
       background: #4c00b0;
-      transform: scale(1.02);
+      animation: pulse 0.4s ease-in-out forwards;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(16, 185, 129, 0.3);
+      }
+      50% {
+        transform: scale(1.03);
+        box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(16, 185, 129, 0.3);
+      }
     }
 
     footer {
@@ -227,9 +272,25 @@
         font-size: 18px;
       }
     }
+
+@media (min-width: 1280px) {
+  form {
+    max-width: 1000px;
+  }
+}
+
+
   </style>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1PKH55BTQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-F1PKH55BTQ');
+</script>
 <body>
   <header>
     <h1>INTERN NINJA</h1>
