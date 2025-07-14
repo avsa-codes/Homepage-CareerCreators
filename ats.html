@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ATS Resume Score Calculator | Career Creators</title>
+  <meta name="description" content="Upload your resume and compare it with a job description to get an ATS score.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9ff;
+      margin: 0;
+      padding: 0;
+      color: #1f2937;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      color: #6a11cb;
+      margin-bottom: 1.5rem;
+    }
+    textarea, input[type="file"] {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background: #6a11cb;
+      color: white;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      display: block;
+      margin: 0 auto 2rem;
+    }
+    button:hover {
+      background: #4c00b0;
+    }
+    .result {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+    .score {
+      font-size: 2rem;
+      color: #2575fc;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .feedback {
+      font-size: 1rem;
+      color: #374151;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #6b7280;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    @media screen and (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ATS Resume Score Calculator</h1>
+
+    <label><strong>Upload Resume (PDF only):</strong></label>
+    <input type="file" id="resumeFile" accept="application/pdf" />
+
+    <label><strong>Paste Job Description:</strong></label>
+    <textarea id="jdText" placeholder="Paste the job description here..." rows="6"></textarea>
+
+    <button onclick="processATS()">Calculate ATS Score</button>
+
+    <div id="result" class="result" style="display:none;">
+      <div class="score" id="scoreDisplay"></div>
+      <div class="feedback" id="feedbackDisplay"></div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Career Creators | <a href="/index.html" style="color:#6a11cb;text-decoration:underline;">Back to Home</a>
+  </footer>
+
+  <script>
+    async function extractPDFText(file) {
+      const arrayBuffer = await file.arrayBuffer();
+      const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+      let text = "";
+
+      for (let i = 1; i <= pdf.numPages; i++) {
+        const page = await pdf.getPage(i);
+        const content = await page.getTextContent();
+        const pageText = content.items.map(item => item.str).join(" ");
+        text += pageText + " ";
+      }
+
+      return text;
+    }
+
+    async function processATS() {
+      const fileInput = document.getElementById("resumeFile");
+      const jdText = document.getElementById("jdText").value.toLowerCase();
+
+      if (!fileInput.files[0] || !jdText) {
+        alert("Please upload a resume and paste the job description.");
+        return;
+      }
+
+      const resumeText = (await extractPDFText(fileInput.files[0])).toLowerCase();
+      const jdWords = [...new Set(jdText.match(/\b\w+\b/g))].filter(w => w.length > 3);
+      const resumeWords = resumeText.match(/\b\w+\b/g) || [];
+
+      let matched = 0;
+      const missingKeywords = [];
+
+      jdWords.forEach(word => {
+        if (resumeWords.includes(word)) {
+          matched++;
+        } else {
+          missingKeywords.push(word);
+        }
+      });
+
+      const score = Math.round((matched / jdWords.length) * 100);
+      document.getElementById("scoreDisplay").innerText = `ATS Score: ${score}/100`;
+
+      let feedback = `<strong>Matched:</strong> ${matched}/${jdWords.length}<br>`;
+      feedback += `<strong>Missing Keywords:</strong> ${missingKeywords.slice(0, 10).join(", ")}`;
+      document.getElementById("feedbackDisplay").innerHTML = feedback;
+
+      document.getElementById("result").style.display = "block";
+    }
+  </script>
+</body>
+</html>
