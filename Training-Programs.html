@@ -11,14 +11,13 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1PKH55BTQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-F1PKH55BTQ');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1PKH55BTQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F1PKH55BTQ');
+  </script>
   <style>
     * {
       margin: 0;
@@ -45,21 +44,17 @@
       color: white;
       text-align: center;
       padding: 5rem 2rem;
-      position: relative;
-      overflow: hidden;
     }
 
     header h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
-      animation: fadeInDown 1s ease-in-out;
     }
 
     header p {
-      font-size: 1.2rem;
-      max-width: 700px;
+      font-size: 1.1rem;
+      max-width: 90%;
       margin: 0 auto;
-      animation: fadeInUp 1s ease-in-out;
     }
 
     .cta {
@@ -74,6 +69,7 @@
       font-weight: 600;
       text-decoration: none;
       transition: background 0.3s ease;
+      display: inline-block;
     }
 
     .cta a:hover {
@@ -86,15 +82,21 @@
 
     .section h2 {
       text-align: center;
-      font-size: 2.2rem;
+      font-size: 2rem;
       color: #6a11cb;
       margin-bottom: 2rem;
     }
 
     .features {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: 1fr;
       gap: 2rem;
+    }
+
+    @media (min-width: 600px) {
+      .features {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
     }
 
     .card {
@@ -125,7 +127,7 @@
 
     .form-section {
       background: white;
-      padding: 3rem 2rem;
+      padding: 2rem 1rem;
       border-radius: 1rem;
       max-width: 900px;
       margin: 3rem auto;
@@ -175,13 +177,52 @@
       text-decoration: underline;
     }
 
-    @media screen and (max-width: 768px) {
+    #whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 40px;
+      padding: 12px 18px;
+      text-decoration: none;
+      font-weight: 600;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    #whatsapp-btn img {
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+    }
+
+    @media (max-width: 768px) {
       header h1 {
         font-size: 2rem;
       }
 
       header p {
         font-size: 1rem;
+      }
+
+      .cta a {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+      }
+
+      #whatsapp-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+      }
+
+      #whatsapp-btn img {
+        width: 24px !important;
+        height: 24px !important;
       }
     }
   </style>
@@ -349,3 +390,4 @@
 </body>
 
 </html>
+
