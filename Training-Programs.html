@@ -5,11 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Career Creators | Training Program</title>
-  <meta name="description" content="Join the Career Creators Training Program to learn practical sales, marketing, and communication skills with a guaranteed internship." />
+  <meta name="description" content="Join the Career Creators Training Program to learn practical sales, marketing, and communication skills with a guaranteed internship.">
   <meta name="keywords" content="career creators, training program, internship, sales training, communication skills, digital marketing">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-K9AlZnK/hvRQ9D9kGyvDeTQ5kWwzYxV+zFrJh9YBSp2JROHR8M8bwQ4uc02K3tO1k9nKrC1y3CwRHAvLMm0uQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1PKH55BTQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F1PKH55BTQ');
+</script>
   <style>
     * {
       margin: 0;
@@ -40,34 +49,35 @@
       overflow: hidden;
     }
 
-    header::after {
-      content: "";
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      background: rgba(255, 255, 255, 0.05);
-      top: -100px;
-      right: -100px;
-      border-radius: 50%;
-      animation: float 6s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(20px); }
-    }
-
     header h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
-      animation: fadeInDown 1s ease;
+      animation: fadeInDown 1s ease-in-out;
     }
 
     header p {
       font-size: 1.2rem;
       max-width: 700px;
       margin: 0 auto;
-      animation: fadeInUp 1.5s ease;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .cta {
+      margin-top: 2rem;
+    }
+
+    .cta a {
+      padding: 1rem 2rem;
+      background: #ffffff;
+      color: #6a11cb;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #e0d8fb;
     }
 
     .section {
@@ -79,7 +89,6 @@
       font-size: 2.2rem;
       color: #6a11cb;
       margin-bottom: 2rem;
-      position: relative;
     }
 
     .features {
@@ -97,8 +106,8 @@
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      transform: scale(1.03);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
     }
 
     .card h3 {
@@ -114,27 +123,6 @@
       margin-bottom: 0.5rem;
     }
 
-    .cta {
-      text-align: center;
-      margin-top: 3rem;
-    }
-
-    .cta button, .cta a {
-      padding: 1rem 2rem;
-      background: #6a11cb;
-      color: white;
-      border: none;
-      border-radius: 30px;
-      font-size: 1rem;
-      text-decoration: none;
-      margin: 0.5rem;
-      cursor: pointer;
-    }
-
-    .cta button:hover, .cta a:hover {
-      background: #4c00b0;
-    }
-
     .form-section {
       background: white;
       padding: 3rem 2rem;
@@ -144,12 +132,29 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     }
 
-    .form-section input, .form-section textarea {
+    .form-section input,
+    .form-section textarea {
       width: 100%;
       padding: 1rem;
       margin-bottom: 1rem;
       border: 1px solid #ccc;
       border-radius: 8px;
+    }
+
+    .form-section button {
+      width: 100%;
+      background: #6a11cb;
+      color: white;
+      padding: 1rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .form-section button:hover {
+      background: #4c00b0;
     }
 
     footer {
@@ -159,21 +164,36 @@
       color: #6b7280;
       background: #f3f4f6;
     }
+
+    footer a {
+      color: #6a11cb;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1PKH55BTQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-F1PKH55BTQ');
-</script>
 <body>
-  <header data-aos="zoom-in">
+  <header data-aos="fade-down">
     <h1>Career Creators Training Program</h1>
-    <p>Master essential skills in sales, marketing, communication, and get a guaranteed internship. Learn from real-world projects.</p>
+    <p>Master essential skills in sales, marketing, and communication with real-world projects and a guaranteed internship.</p>
+    <div class="cta">
+      <a href="/hiring.html"><i class="fas fa-arrow-right"></i> Go to Hiring Page</a>
+    </div>
   </header>
 
   <div class="container">
@@ -249,19 +269,23 @@
         <textarea name="reason" rows="4" placeholder="Why do you want to join?" required></textarea>
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://careercreators.online/thanks.html">
-        <button type="submit" style="width:100%;background:#6a11cb;color:white;padding:1rem;border:none;border-radius:30px;font-size:1rem;cursor:pointer;">Submit Application</button>
+        <button type="submit">Submit Application</button>
       </form>
     </section>
   </div>
 
   <footer>
-    &copy; 2025 Career Creators | All rights reserved <br>
-    <a href="/index.html" style="color:#6a11cb;text-decoration:underline;">Back to Home</a>
+    &copy; 2025 Career Creators | All rights reserved<br>
+    <a href="/index.html">Back to Home</a> |
+    <a href="/hiring.html">Hiring Page</a>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
   </script>
 
   <!-- WhatsApp Chat Button -->
