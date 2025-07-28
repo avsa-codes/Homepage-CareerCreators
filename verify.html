@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Career Creators | Certificate Verification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6fc;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1a1f71;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .subheading {
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    }
+    .search {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .search input {
+      padding: 12px;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .results {
+      margin-top: 20px;
+    }
+    .result-card {
+      background: #f0f2ff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      border-left: 4px solid #1a1f71;
+    }
+    .result-card strong {
+      color: #1a1f71;
+    }
+    .live-feed {
+      margin-top: 40px;
+      background: #e0e7ff;
+      padding: 15px;
+      border-radius: 10px;
+      font-style: italic;
+      text-align: center;
+      color: #333;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Career Creators</h1>
+    <div class="subheading">Empowering Students through Hands-On Training</div>
+    <div class="stats">
+      <div>🧑‍🎓 500+ Students Enrolled</div>
+      <div>📜 320+ Certificates Verified</div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="search">
+      <h2>Verify a Certificate</h2>
+      <input type="text" id="searchBox" placeholder="Enter student name or certificate ID" />
+    </div>
+    <div id="results" class="results"></div>
+
+    <div id="liveFeed" class="live-feed"></div>
+  </div>
+
+  <script>
+    const students = [
+      { name: "Riya Sharma", domain: "Digital Marketing", id: "CCDM001" },
+      { name: "Aman Gupta", domain: "Data Analytics", id: "CCDA002" },
+      { name: "Priya Mehta", domain: "Python Programming", id: "CCPP003" },
+      { name: "Karan Singh", domain: "Web Development", id: "CCWD004" },
+      { name: "Mehul Patel", domain: "Excel & Power BI", id: "CCEX005" },
+      { name: "Anjali Verma", domain: "CRM & Google Workspace", id: "CCGS006" },
+      { name: "Devika Nair", domain: "Graphic Design", id: "CCGD007" },
+      { name: "Tarun Yadav", domain: "UI/UX Design", id: "CCUX008" },
+      { name: "Neha Rathi", domain: "HR & Recruitment", id: "CCHR009" },
+      { name: "Ravi Kumar", domain: "Sales & Client Management", id: "CCSL010" },
+      // Add 40 more if needed...
+    ];
+
+    const searchBox = document.getElementById('searchBox');
+    const results = document.getElementById('results');
+    const liveFeed = document.getElementById('liveFeed');
+
+    searchBox.addEventListener('input', () => {
+      const query = searchBox.value.toLowerCase();
+      results.innerHTML = '';
+
+      const filtered = students.filter(s =>
+        s.name.toLowerCase().includes(query) ||
+        s.id.toLowerCase().includes(query)
+      );
+
+      if (filtered.length === 0 && query) {
+        results.innerHTML = "<p>No matching certificate found.</p>";
+      }
+
+      filtered.forEach(s => {
+        results.innerHTML += `
+          <div class="result-card">
+            <strong>${s.name}</strong><br/>
+            Domain: ${s.domain}<br/>
+            Certificate ID: ${s.id}
+          </div>
+        `;
+      });
+    });
+
+    const liveNames = students.map(s => s.name);
+    function updateLiveFeed() {
+      const name = liveNames[Math.floor(Math.random() * liveNames.length)];
+      const message = `${name} just verified their certificate!`;
+      liveFeed.innerText = message;
+    }
+
+    setInterval(updateLiveFeed, 5000);
+    updateLiveFeed();
+  </script>
+</body>
+</html>
+
